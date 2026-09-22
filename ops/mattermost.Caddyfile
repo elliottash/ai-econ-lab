@@ -1,0 +1,7 @@
+# Blocks on lexchat-1-mattermost (91.107.197.81), alongside the course and ki-justiz sites.
+chat.ai-econ-lab.org {
+    reverse_proxy localhost:8067
+}
+chat.zrh-ai-econ.com {
+    redir https://chat.ai-econ-lab.org{uri} permanent
+}
