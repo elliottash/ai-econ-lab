@@ -1,0 +1,188 @@
+# Peer-Reviewed Conference Proceedings. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: Legal extractive summarization of U.S. court opinions
+  meta: (with Emmanuel Bauer, Dominik Stammbach, and Nianlong Gu), LIRAI (2023)
+  pdf: https://ceur-ws.org/Vol-3594/paper1.pdf
+  links:
+  - text: 'Legal MemSum: Code and Trained Models'
+    url: https://github.com/bauerem/legal_memsum
+  abstract: This paper tackles the task of legal extractive summarization using a dataset of 430K U.S.
+    court opinions with key passages annotated. According to automated summary quality metrics, the reinforcement-learning-based
+    MemSum model is best and even out-performs transformer-based models. In turn, expert human evaluation
+    shows that MemSum summaries effectively capture the key points of lengthy court opinions. Motivated
+    by these results, we open-source our models to the general public. This represents progress towards
+    democratizing law and making U.S. court opinions more accessible to the general public.
+  summary: Trains a reinforcement-learning summarizer on 430,000 U.S. court opinions with key passages
+    marked, so computers can pull the sentences that matter out of long rulings; expert readers confirm
+    the summaries capture the key points.
+- title: Uncovering and Categorizing Social Biases in Text-to-SQL
+  meta: (with Yan Liu, Yan Gao, Zhe Su, Xiaokang Chen, Jian-Guang Lou), ACL (2023)
+  url: https://arxiv.org/abs/2305.16253
+  abstract: Large pre-trained language models are acknowledged to carry social biases towards different
+    demographics, which can further amplify existing stereotypes in our society and cause even more harm.
+    Text-to-SQL is an important task, models of which are mainly adopted by administrative industries,
+    where unfair decisions may lead to catastrophic consequences. However, existing Text-to-SQL models
+    are trained on clean, neutral datasets, such as Spider and WikiSQL. This, to some extent, cover up
+    social bias in models under ideal conditions, which nevertheless may emerge in real application scenarios.
+    In this work, we aim to uncover and categorize social biases in Text-to-SQL models. We summarize the
+    categories of social biases that may occur in structured data for Text-to-SQL models. We build test
+    benchmarks and reveal that models with similar task accuracy can contain social biases at very different
+    rates. We show how to take advantage of our methodology to uncover and assess social biases in the
+    downstream Text-to-SQL task. We will release our code and data.
+  summary: Shows that systems that turn questions into database queries carry measurable social biases,
+    categorizes those bias types, and evaluates what mitigates them — a concern for administrative uses
+    where unfair outputs have real consequences.
+- title: Data-Centric Factors in Algorithmic Fairness
+  meta: (with Nianyun Li and Naman Goel), AAAI/ACM Conference on AI, Ethics, and Society (2022)
+  pdf: https://goelnaman.github.io/upload/doc/papers/2022/li_goel_ash_aies22.pdf
+  links:
+  - text: Poster
+    url: https://goelnaman.github.io/upload/doc/papers/2022/li_goel_ash_aies22_poster.pdf
+  - text: Video
+    url: https://www.youtube.com/watch?v=YwyHG2M9jhU
+  abstract: Notwithstanding the widely held view that data generation and data curation processes are
+    prominent sources of bias in machine learning algorithms, there is little empirical research seeking
+    to document and understand the specific data dimensions affecting algorithmic unfairness. Contra the
+    previous work, which has focused on modeling using simple, small-scale benchmark datasets, we hold
+    the model constant and methodically intervene on relevant dimensions of a much larger, more diverse
+    dataset. For this purpose, we introduce a new dataset on recidivism in 1.5 million criminal cases
+    from courts in the U.S. state of Wisconsin, 2000-2018. From this main dataset, we generate multiple
+    auxiliary datasets to simulate different kinds of biases in the data. Focusing on algorithmic bias
+    toward different race/ethnicity groups, we assess the relevance of training data size, base rate difference
+    between groups, representation of groups in the training data, temporal aspects of data curation,
+    including race/ethnicity or neighborhood characteristics as features, and training separate classifiers
+    by race/ethnicity or crime type. We find that these factors often do influence fairness metrics holding
+    the classifier specification constant, without having a corresponding effect on accuracy metrics.
+    The methodology and the results in the paper provide a useful reference point for a data-centric approach
+    to studying algorithmic fairness in recidivism prediction and beyond. [ ][ ].
+  summary: Holds the machine-learning model fixed and varies the data — features, labels, and group sizes
+    in a dataset of 1.5 million criminal cases — to document which data choices actually drive algorithmic
+    unfairness.
+- title: 'Heroes, Villains, and Victims, and GPT-3: Automated Extraction of Character Roles Without Training
+    Data'
+  meta: (with Dominik Stammbach and Maria Antoniak), Workshop on Narrative Understanding (2022)
+  url: http://arxiv.org/abs/2205.07557
+  abstract: 'This paper shows how to use large-scale pre-trained language models to extract character
+    roles from narrative texts without training data. Queried with a zero-shot question-answering prompt,
+    GPT-3 can identify the hero, villain, and victim in diverse domains: newspaper articles, movie plot
+    summaries, and political speeches.'
+  summary: Shows that GPT-3 can identify the hero, villain, and victim in news articles, movie plot summaries,
+    and political speeches with no task-specific training data, using simple question-answering prompts.
+- title: 'DocSCAN: Unsupervised Text Classification via Learning from Neighbors'
+  meta: (with Dominik Stammbach), KONVENS ( 2022)
+  url: https://arxiv.org/abs/2105.04024
+  links:
+  - text: Code
+    url: https://github.com/dominiksinsaarland/DocSCAN
+  abstract: We introduce DocSCAN, a completely unsupervised text classification approach using Semantic
+    Clustering by Adopting Nearest-Neighbors (SCAN). For each document, we obtain semantically informative
+    vectors from a large pre-trained language model. Similar documents have proximate vectors, so neighbors
+    in the representation space tend to share topic labels. Our learnable clustering approach uses pairs
+    of neighboring data points as a weak learning signal. The proposed approach learns to assign classes
+    to the whole dataset without provided ground-truth labels. On five topic classification benchmarks,
+    we improve on various unsupervised baselines by a large margin. In datasets with relatively few and
+    balanced outcome classes, DocSCAN approaches the performance of supervised classification. The method
+    fails for other types of classification, such as sentiment analysis, pointing to important conceptual
+    and practical differences between classifying images and texts.
+  summary: 'A text-classification method that needs no labeled data: documents with similar meanings sit
+    close together in language-model space, so neighboring documents serve as a weak signal for learning
+    topic classes.'
+- title: Machine Extraction of Tax Laws from Legislative Texts
+  meta: (with Malka Guillot and Luyang Han), NLLP (2021)
+  pdf: https://aclanthology.org/2021.nllp-1.7.pdf
+  links:
+  - text: https://github.com/luyang521/tax-classification
+    url: https://github.com/luyang521/tax-classification
+  abstract: Using a corpus of compiled codes from U.S. states containing labeled tax law sections, we
+    train text classifiers to automatically tag tax-law documents and, further, to identify the associated
+    revenue source (e.g. income, property, or sales). After evaluating classifier performance in held-out
+    test data, we apply them to an historical corpus of U.S. state legislation to extract the flow of
+    relevant laws over the years 1910 through 2010. We document that the classifiers are effective in
+    the historical corpus, for example by automatically detecting establishments of state personal income
+    taxes. The trained models with replication code are published at.
+  summary: Trains classifiers that recognize tax-law provisions in U.S. state codes and identify the revenue
+    source they tap, then applies them to a century of legislation (1910–2010) to track the flow of state
+    tax laws.
+- title: Evaluating Document Representations for Content-based Legal Literature Recommendations
+  meta: (with Malte Ostendorff, Terry Ruas, Bela Gipp, Julian Moreno-Schneider, and Georg Rehm), ICAIL
+    (2021)
+  url: https://arxiv.org/abs/2104.13841
+  links:
+  - text: this https URL
+    url: https://github.com/malteos/legal-document-similarity/
+  abstract: Recommender systems assist legal professionals in finding relevant literature for supporting
+    their case. Despite its importance for the profession, legal applications do not reflect the latest
+    advances in recommender systems and representation learning research. Simultaneously, legal recommender
+    systems are typically evaluated in small-scale user study without any public available benchmark datasets.
+    Thus, these studies have limited reproducibility. To address the gap between research and practice,
+    we explore a set of state-of-the-art document representation methods for the task of retrieving semantically
+    related US case law. We evaluate text-based (e.g., fastText, Transformers), citation-based (e.g.,
+    DeepWalk, Poincaré), and hybrid methods. We compare in total 27 methods using two silver standards
+    with annotations for 2,964 documents. The silver standards are newly created from Open Case Book and
+    Wikisource and can be reused under an open license facilitating reproducibility. Our experiments show
+    that document representations from averaged fastText word vectors (trained on legal corpora) yield
+    the best results, closely followed by Poincaré citation embeddings. Combining fastText and Poincaré
+    in a hybrid manner further improves the overall result. Besides the overall performance, we analyze
+    the methods depending on document length, citation count, and the coverage of their recommendations.
+    We make our source code, models, and datasets publicly available at.
+  summary: Benchmarks modern document-representation methods for recommending relevant legal literature,
+    addressing a practice where evaluation has relied on small, unreproducible user studies.
+- title: Legal language modeling with transformers
+  meta: (with Lazar Peric, Stefan Mijic, and Dominik Stammbach), ASAIL (2020)
+  pdf: http://ceur-ws.org/Vol-2764/paper2.pdf
+  abstract: 'We explore the use of deep learning algorithms to generate text in a professional, technical
+    domain: the judiciary. Building on previous work that has focused on non-legal texts, we train auto-regressive
+    transformer models to read and write judicial opinions. We show that survey respondents with legal
+    expertise cannot distinguish genuine opinions from fake opinions generated by our models. However,
+    a transformer-based classifier can distinguish machine- from human-generated legal text with high
+    accuracy. These findings suggest how transformer models can support legal practice.'
+  summary: Trains text-generating models on judicial opinions; legal experts cannot tell the fake opinions
+    from real ones, though a classifier can — evidence both on the capability and on the detectability
+    of machine-written legal text.
+- title: Unsupervised Extraction of Workplace Rights and Duties from Collective Bargaining Agreements
+  meta: (with Jeff Jacobs, W. Bentley MacLeod, Suresh Naidu, and Dominik Stammbach), MLLD (2020)
+  pdf: https://www.dropbox.com/s/2nsnt86a66u8r1i/Ash-Jacobs-MacLeod-Naidu-Stammbach.pdf?raw=1
+  links:
+  - text: Source code and replication package
+    url: https://github.com/dominiksinsaarland/labor-contracts
+  abstract: This paper describes an unsupervised legal document parser which performs a decomposition
+    of labor union contracts into discrete assignments of rights and duties among agents of interest.
+    We use insights from deontic logic applied to modal categories and other linguistic patterns to generate
+    topic-specific measures of relative legal authority. We illustrate the consistency and efficiency
+    of the pipeline by applying it to a large corpus of 35K contracts and validating the resulting outputs.
+  summary: Builds an unsupervised parser that breaks 35,000 union contracts into specific rights and duties
+    assigned to workers, employers, and unions, producing measurable indicators of who holds legal authority
+    in the workplace.
+- title: 'e-FEVER: Explanations and Summaries for Automated Fact Checking'
+  meta: (with Dominik Stammbach), TTO (2020)
+  pdf: https://truthandtrustonline.com/wp-content/uploads/2020/10/TTO04.pdf
+  abstract: This paper demonstrates the capability of a large pre-trained language model (GPT-3) to automatically
+    generate explanations for fact checks. Given a claim and the retrieved potential evidence, our system
+    summarizes the evidence and how it supports the fact-check determination. The system does not require
+    any additional parameter training; instead, we use GPT-3’s analogical “few-shot-learning” capability,
+    where we provide a task description and some examples of solved tasks. We then subsequently ask the
+    model to explain new fact checks. Besides providing an intuitive and compressed summary for downstream
+    users, we show that the machine-generated explanations can themselves serve as evidence for automatically
+    making true/false determinations. Along the way, we report new state-of-the-art fact-checking results
+    for the FEVER dataset. Finally, we make the explanations corpus publicly accessible, providing the
+    first large-scale resource for explainable automated fact checking.
+  summary: 'Uses GPT-3 without additional training to write plain-language explanations of fact checks:
+    why the retrieved evidence supports the verdict, summarized in a few sentences.'
+- title: Entropy in Legal Language
+  meta: (with Roland Friedrich and Mauro Luzzatto), NLLP (2020)
+  pdf: http://ceur-ws.org/Vol-2645/paper4.pdf
+  links:
+  - text: Code
+    url: https://github.com/MauroLuzzatto/legal-entropy
+  abstract: We introduce a novel method to measure word ambiguity, i.e. local entropy, based on a neural
+    language model. We use the measure to investigate entropy in the written text of opinions published
+    by the U.S. Supreme Court (SCOTUS) and the German Bundesgerichtshof (BGH), representative courts of
+    the common-law and civil-law court systems respectively. We compare the local (word) entropy measure
+    with a global (document) entropy measure constructed with a compression algorithm. Our method uses
+    an auxiliary corpus of parallel English and German to adjust for persistent differences in entropy
+    due to the languages. Our results suggest that the BGH’s texts are of lower entropy than the SCOTUS’s.
+    Investigation of low- and high-entropy features suggests that the entropy differential is driven by
+    more frequent use of technical language in the German court.
+  summary: Measures word-level ambiguity in legal text with a neural language model, and compares the
+    U.S. Supreme Court with Germany's federal court — common-law versus civil-law drafting — adjusting
+    for language differences with a parallel corpus.

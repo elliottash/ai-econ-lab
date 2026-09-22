@@ -1,0 +1,60 @@
+---
+import type { Paper } from '../data/papers';
+
+interface Props {
+  paper: Paper;
+  index?: number;
+}
+
+const { paper, index } = Astro.props;
+const titleHref = paper.url || paper.pdf || '';
+const resourceLinks = (paper.links || []).filter(
+  l => l.url !== paper.url && l.url !== paper.pdf
+);
+const press = paper.press || [];
+const showPdf = !!paper.pdf && paper.pdf !== titleHref;
+const hasAbstract = !!paper.abstract && paper.abstract.length > 20;
+const hasCollapsed = hasAbstract || resourceLinks.length > 0 || press.length > 0;
+---
+<div class="paper-entry">
+  <div class="paper-row">
+    {index !== undefined && <span class="paper-index">{index}.</span>}
+    <div>
+      <div>
+        {titleHref ? (
+          <a
+            class="paper-title"
+            href={titleHref}
+            target={titleHref.startsWith('http') ? '_blank' : undefined}
+            rel="noopener"
+          >“{paper.title}”</a>
+        ) : (
+          <span class="paper-title">“{paper.title}”</span>
+        )}
+      </div>
+      {paper.meta && <p class="paper-meta">{paper.meta}</p>}
+      {paper.summary && <p class="paper-summary">{paper.summary}</p>}
+      {showPdf && (
+        <a class="paper-pdf" href={paper.pdf} target="_blank" rel="noopener">PDF</a>
+      )}
+      {hasCollapsed && (
+        <details>
+          <summary><span class="chevron">›</span> Abstract</summary>
+          <div class="abstract-box">
+            {hasAbstract && <p>{paper.abstract}</p>}
+            {(resourceLinks.length > 0 || press.length > 0) && (
+              <div class="abstract-links">
+                {resourceLinks.map(l => (
+                  <a href={l.url} target={l.url.startsWith('http') ? '_blank' : undefined} rel="noopener">{l.text}</a>
+                ))}
+                {press.map(l => (
+                  <a href={l.url} target="_blank" rel="noopener">{l.text}</a>
+                ))}
+              </div>
+            )}
+          </div>
+        </details>
+      )}
+    </div>
+  </div>
+</div>

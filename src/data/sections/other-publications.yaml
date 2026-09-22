@@ -1,0 +1,77 @@
+# Other Publications (Not Peer-Reviewed). Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: Race-Related Research in Economics and other Social Sciences
+  meta: (with Arun Advani, David Cai, and Imran Rasul), Econometric Society Monograph Series (forthcoming)
+  pdf: https://elliottash.com/papers/ES_RR_Research.pdf
+  press:
+  - text: Financial Times
+    url: https://www.ft.com/content/4f953365-6661-4329-a615-1018f5756758
+  - text: VoxEU
+    url: https://voxeu.org/article/economics-and-study-race
+  abstract: How does economics compare to other social sciences in its study of issues related to race
+    and ethnicity? We assess this using a corpus of 500,000 academic publications in economics, political
+    science, and sociology. Using an algorithmic approach to classify race-related publications, we document
+    that economics lags far behind the other disciplines in the volume and share of race-related research,
+    despite having higher absolute volumes of research output. Since 1960, there have been 13,000 race-related
+    publications in sociology, 4,000 in political science, and 3,000 in economics. Since around 1970,
+    the share of economics publications that are race-related has hovered just below 2% (although the
+    share is higher in top-5 journals); in political science, the share has been around 4% since the mid-1990s,
+    while in sociology, it has been above 6% since the 1960s and risen to over 12% in the last decade.
+    Finally, using survey data collected from the Social Science Prediction Platform, we find that economists
+    tend to overestimate the amount of race-related research in all disciplines, but especially so in
+    economics.
+  summary: Compares economics with political science and sociology across 500,000 publications and documents
+    that economics publishes far less race-related research as a share of output than the neighboring
+    disciplines.
+- title: 'The Making of International Tax Law: Evidence from Tax Treaties Text'
+  meta: (with Omri Marian), Florida Tax Review (2020)
+  pdf: https://www.dropbox.com/s/u88z16psmg574cs/FTR_24-1_03_Ash-Marian_Fpp.pdf?raw=1
+  abstract: We offer the first attempt at empirically testing the level of transnational consensus on
+    the legal language controlling international tax matters. We also investigate the institutional framework
+    of such consensus-building. We build a dataset of 4,052 bilateral income tax treaties, as well as
+    16 model tax treaties published by the United Nations (UN), Organisation for Economic Co-operation
+    and Development (OECD) and the United States. We use natural language processing to perform pair-wise
+    comparison of all treaties in effect at any given year. We identify clear trends of convergence of
+    legal language in bilateral tax treaties since the 1960s, particularly on the taxation of cross-border
+    business income. To explore the institutional source of such consensus, we compare all treaties in
+    effect at any given year to the model treaties in effect during that year. We also explore whether
+    newly concluded treaties converge towards legal language in newly introduced models. We find the OECD
+    Model Tax Convention (OECD Model) to have a significant influence. In the years following the adoption
+    of a new OECD Model there is a clear trend of convergence in newly adopted bilateral tax treaties
+    towards the language of the new OECD Model. We also find that model treaties published by the UN (UN
+    Model) have little immediate observable effect, though UN treaty policies seem to have a delayed,
+    yet lasting effect. We conclude that such findings support the argument that a trend towards international
+    legal consensus on certain tax matters exists, and that the OECD is the institutional source of the
+    consensus building process.
+  summary: Applies text comparison to 4,052 bilateral tax treaties and 16 model treaties to measure how
+    much countries' treaty language converges over time and which institutions drive that consensus.
+- title: Automated Classification of Modes of Moral Reasoning in Judicial Decisions
+  meta: '(with Nischal Mainali, Liam Meier, and Daniel L. Chen), in: Computational legal studies: The
+    promise and challenge of data-driven research, Edward Elgar (2020)'
+  pdf: https://elliottash.com/papers/Automated_Classification_of_Modes_of_Moral_Reasoning_in_Judicial_Decisions.pdf
+  summary: Uses text-classification methods to distinguish modes of moral reasoning in judicial decisions,
+    extending the computational study of court language from ideology to moral foundations. (No abstract
+    on file.)
+- title: 'Case vectors: Spatial representations of the law using document embeddings'
+  meta: '(with Daniel L. Chen), in: Law as Data, Santa Fe Institute Press (2019)'
+  pdf: https://www.dropbox.com/s/r2m1ejei2l8g47q/LAD_Chapter_11_as_of_050719.pdf?raw=1
+  abstract: Recent work in natural language processing represents language objects (words and documents)
+    as dense vectors that encode the relations between those objects. This paper explores the application
+    of these methods to legal language, with the goal of understanding judicial reasoning and the relations
+    between judges. In an application to federal appellate courts, we show that these vectors encode information
+    that distinguishes courts, time, and legal topics. The vectors do not reveal spatial distinctions
+    in terms of political party or law school attended, but they do highlight generational differences
+    across judges. We conclude the paper by outlining a range of promising future applications of these
+    methods.
+  summary: Represents federal appellate opinions as vectors and shows they encode court, era, and legal
+    topic — but not the judges' political party or law school.
+- title: 'Judge, Jury, and EXEcute File: The brave new world of legal automation ,'
+  meta: Social Market Foundation (2018)
+  abstract: This paper discusses the prospects for automating decisions in the legal system. I will discuss
+    active research on decision prediction models for judges and prosecutors and how these algorithms
+    might be used to detect and reduce bias in legal decision-making. I will also discuss the substantial
+    risks for these algorithms to replicate existing biases in the system or create new ones. Along the
+    way, I will discuss the role that incentives theory and econometrics can play in understanding and
+    mitigating these risks.
+  summary: 'An essay on automating legal decisions: prediction models could help detect and reduce bias
+    in judging and prosecution, but risk replicating existing biases or creating new ones.'

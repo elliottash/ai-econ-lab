@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import PersonCard from '../../components/PersonCard.astro';
+import {
+  DIRECTOR,
+  POSTDOCS,
+  PHD_STUDENTS,
+  ASSISTANTS,
+  LAB_MANAGERS,
+  AFFILIATES,
+  VISITORS,
+  ALUMNI,
+} from '../../data/people';
+import { LAB } from '../../data/lab';
+
+const sections = [
+  { eyebrow: 'Leadership', title: 'Director', people: DIRECTOR },
+  { eyebrow: 'Research', title: 'Postdoctoral researchers', people: POSTDOCS },
+  { eyebrow: 'Research', title: 'PhD students', people: PHD_STUDENTS },
+  { eyebrow: 'Research', title: 'Scientific assistants', people: ASSISTANTS },
+  { eyebrow: 'Operations', title: 'Lab manager', people: LAB_MANAGERS },
+  { eyebrow: 'Collaboration', title: 'Faculty affiliates', people: AFFILIATES },
+  { eyebrow: 'Guests', title: 'Visiting students', people: VISITORS },
+  { eyebrow: 'Alumni', title: 'Former group members', people: ALUMNI },
+].filter(s => s.people.length > 0);
+---
+<Base title="People" description={`People of the ${LAB.name} at ETH Zurich.`}>
+  <section class="page-hero shell">
+    <p class="eyebrow">{LAB.name}</p>
+    <h1>People</h1>
+    <p class="lede">
+      The lab's director, researchers, staff, faculty affiliates, visiting
+      students, and former members. Individual pages list personal sites and
+      contact details where available.
+    </p>
+  </section>
+
+  {sections.map((s, i) => (
+    <section class:list={['section', { alt: i % 2 === 0 }]}>
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">{s.eyebrow}</p>
+            <h2>{s.title}</h2>
+          </div>
+          <p class="section-intro">{s.people.length}
+            {s.people.length === 1 ? 'person' : 'people'}</p>
+        </div>
+        <div class="people-grid">
+          {s.people.map(p => <PersonCard person={p} />)}
+        </div>
+      </div>
+    </section>
+  ))}
+</Base>

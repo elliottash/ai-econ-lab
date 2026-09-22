@@ -1,26 +1,39 @@
-# Zurich Summer School in AI & Applied Economics
+# AI and Economics Lab
 
-Public course website and student-facing materials for the 2026 Zurich Summer
-School in AI & Applied Economics.
+Source for [ai-econ-lab.org](https://ai-econ-lab.org), the AI and Economics Lab at ETH Zurich.
+`ai-econ-lab.com` and both `www` aliases redirect to the canonical `.org` address.
 
-- Course website: <https://zrh-ai-econ.com>
-- Course chat: <https://chat.zrh-ai-econ.com>
-- Current syllabus: [Google Doc](https://docs.google.com/document/d/17osu56j6d13mOvw5NK-IEnD2HOxAc5Rw-oLF5scFsA0/edit?tab=t.0)
+- `src/pages/` — homepage, people, research, and grants
+- `src/data/` — lab description, team, and research YAML
+- `public/assets/` — public images
+- `scripts/` and `tests/` — content audit, sitemap, and validation
 
-## Repository layout
+The 2026 summer school is maintained separately at [zrh-ai-econ.com](https://zrh-ai-econ.com),
+in [elliottash/zrh_ai_econ](https://github.com/elliottash/zrh_ai_econ).
+This repository preserves the original course repository's Git ancestry, but its current tree contains only the lab site.
 
-- `index.html` and `assets/` contain the static course website.
-- `slides/` contains the public syllabus and final lecture PDFs (handout
-  versions, one page per slide).
-- `notebooks/` contains the companion Jupyter notebooks for the practical
-  sessions.
-- `assignments/` contains student-facing assignments as they are released.
+## Development
 
-Instructor source files, solutions, applications, participant data, and internal
-planning documents are intentionally kept outside this public repository.
+Use Node.js compatible with the pinned Astro version, Python 3, and PyYAML:
+
+```sh
+npm ci
+python3 -m pip install -r requirements.txt
+npm run dev
+```
+
+Validate with `npm test`, `npm run build`, and `python3 scripts/check_site.py`.
+The content audit currently reports one existing missing-abstract warning.
 
 ## Deployment
 
-`./deploy.sh` performs a checksum dry run, syncs the complete public tree to the
-shared Hetzner host, and verifies the live homepage and syllabus. Git metadata is
-explicitly excluded from the document root.
+`./deploy.sh` tests and builds, checks local links, dry-runs the upload, then deploys
+to `deploy@138.201.189.28:/opt/ai-econ-lab/site/dist/` and verifies public routes.
+Nginx configuration is in `ops/ai-econ-lab.nginx.conf`; TLS and DNS use Cloudflare.
+
+Private knowledge-base sources in `src/pages/kb/` are deliberately git-ignored.
+They are available in the maintainer's local checkout and restricted admin backups.
+They compile into `/kb/`, which nginx protects with HTTP basic authentication.
+Deploy refuses to run without those local sources. Never publish them or `dist/`
+to GitHub, and never serve the production KB without the nginx authentication rules.
+The existing lab chat remains at `chat.zrh-ai-econ.com`.

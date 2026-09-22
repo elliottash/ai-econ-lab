@@ -1,0 +1,182 @@
+# Selected Publications — AI/ML/NLP. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: 'Apertus: Democratizing Open and Compliant LLMs for Global Language Environments'
+  meta: (with many co-authors), ACL (2026)
+  url: https://arxiv.org/abs/2509.14233
+  abstract: 'We present Apertus, a fully open suite of large language models (LLMs) designed to address
+    two systemic shortcomings in today’s open model ecosystem: data compliance and multilingual representation.
+    Unlike many prior models that release weights without reproducible data pipelines or regard for content-owner
+    rights, Apertus models are pretrained exclusively on openly available data, retroactively respecting
+    robots.txt exclusions and filtering for non-permissive, toxic, and personally identifiable content.
+    To mitigate risks of memorization, we adopt the Goldfish objective during pretraining, strongly suppressing
+    verbatim recall of data while retaining downstream task performance. The Apertus models also expand
+    multilingual coverage, training on 15T tokens from over 1800 languages, with ~40% of pretraining data
+    allocated to non-English content. Released at 8B and 70B scales, Apertus approaches state-of-the-art
+    results among fully open models on multilingual benchmarks, rivalling or surpassing open-weight counterparts.
+    Beyond model weights, we release all scientific artifacts from our development cycle with a permissive
+    license, including data preparation scripts, checkpoints, evaluation suites, and training code, enabling
+    transparent audit and extension.'
+  summary: A fully open family of language models trained on 15 trillion tokens across more than 1,800
+    languages, using only openly licensed data and a training objective that suppresses verbatim memorization.
+- title: Variational Best-of-N Alignment
+  meta: (with Afra Amini, Tim Vieira Ryan Cotterell), ICLR (2025)
+  url: https://arxiv.org/abs/2407.06057
+  links:
+  - text: Code
+    url: https://github.com/rycolab/vbon
+  abstract: 'Best-of-N (BoN) is a popular and effective algorithm for aligning language models to human
+    preferences. The algorithm works as follows: at inference time, N samples are drawn from the language
+    model, and the sample with the highest reward, as judged by a reward model, is returned as the output.
+    Despite its effectiveness, BoN is computationally expensive; it reduces sampling throughput by a factor
+    of N. To make BoN more efficient at inference time, one strategy is to fine-tune the language model
+    to mimic what BoN does during inference. To achieve this, we derive the distribution induced by the
+    BoN algorithm. We then propose to fine-tune the language model to minimize backward KL divergence
+    to the BoN distribution. Our approach is analogous to mean-field variational inference and, thus,
+    we term it variational BoN (vBoN). To the extent this fine-tuning is successful and we end up with
+    a good approximation, we have reduced the inference cost by a factor of N. Our experiments on controlled
+    generation and summarization tasks show that BoN is the most effective alignment method, and our variational
+    approximation to BoN achieves the closest performance to BoN and surpasses models fine-tuned using
+    the standard KL-constrained RL objective. In the controlled generation task, vBoN appears more frequently
+    on the Pareto frontier of reward and KL divergence compared to other alignment methods. In the summarization
+    task, vBoN achieves high reward values across various sampling temperatures.'
+  summary: Distills Best-of-N sampling — generate N answers, keep the best — into the model itself, cutting
+    the inference cost of alignment by a factor of N while keeping most of the quality.
+- title: Aligning Large Language Models with Diverse Political Viewpoints
+  meta: (with Dominik Stammbach, Philine Widmer, Eunjung Cho, Caglar Gulcehre), EMNLP (2024)
+  url: https://aclanthology.org/2024.emnlp-main.412/
+  links:
+  - text: Code
+    url: https://github.com/dominiksinsaarland/aligning-LLMs-with-political-views
+  abstract: Large language models such as ChatGPT exhibit striking political biases. If users query them
+    about political information, they often take a normative stance. To overcome this, we align LLMs with
+    diverse political viewpoints from 100,000 comments written by candidates running for national parliament
+    in Switzerland. Models aligned with this data can generate more accurate political viewpoints from
+    Swiss parties, compared to commercial models such as ChatGPT. We also propose a procedure to generate
+    balanced overviews summarizing multiple viewpoints using such models. The replication package contains
+    all code and data.
+  summary: Aligns language models to the full range of Swiss party positions using 100,000 candidate statements,
+    producing models that represent diverse political viewpoints instead of a single normative stance,
+    plus a method for balanced multi-party overviews.
+- title: 'LePaRD: A Large-Scale Dataset of Judicial Citations to Precedent'
+  meta: (with Robert Mahari, Dominik Stammbach, and Alex Pentland), ACL (2024)
+  url: https://aclanthology.org/2024.acl-long.532/
+  links:
+  - text: Code
+    url: https://github.com/rmahari/LePaRD
+  abstract: 'We present the Legal Passage Retrieval Dataset, LePaRD. LePaRD contains millions of examples
+    of U.S. federal judges citing precedent in context. The dataset aims to facilitate work on legal passage
+    retrieval, a challenging practice-oriented legal retrieval and reasoning task. Legal passage retrieval
+    seeks to predict relevant passages from precedential court decisions given the context of a legal
+    argument. We extensively evaluate various approaches on LePaRD, and find that classification-based
+    retrieval appears to work best. Our best models only achieve a recall of 59% when trained on data
+    corresponding to the 10,000 most-cited passages, underscoring the difficulty of legal passage retrieval.
+    By publishing LePaRD, we provide a large-scale and high quality resource to foster further research
+    on legal passage retrieval. We hope that research on this practice-oriented NLP task will help expand
+    access to justice by reducing the burden associated with legal research via computational assistance.
+    Warning: Extracts from judicial opinions may contain offensive language.'
+  summary: Releases millions of examples of U.S. federal judges citing precedent in context, as a benchmark
+    for retrieving relevant precedent passages mid-argument — a task where the best models still miss
+    much of what matters.
+- title: Where do People Tell Stories Online? Story Detection Across Online Communities
+  meta: (with Maria Antoniak, Joel Mire, Andrew Piper, and Maarten Sap), ACL (2024)
+  url: https://aclanthology.org/2024.acl-long.383/
+  links:
+  - text: Code
+    url: https://github.com/maria-antoniak/storyseeker
+  abstract: Story detection in online communities is a challenging task as stories are scattered across
+    communities and interwoven with non-storytelling spans within a single text. We address this challenge
+    by building and releasing the StorySeeker toolkit, including a richly annotated dataset of 502 Reddit
+    posts and comments, a detailed codebook adapted to the social media context, and models to predict
+    storytelling at the document and span levels. Our dataset is sampled from hundreds of popular English-language
+    Reddit communities ranging across 33 topic categories, and it contains fine-grained expert annotations,
+    including binary story labels, story spans, and event spans. We evaluate a range of detection methods
+    using our data, and we identify the distinctive textual features of online storytelling, focusing
+    on storytelling spans, which we introduce as a new task. We illuminate distributional characteristics
+    of storytelling on a large community-centric social media platform, and we also conduct a case study
+    on r/ChangeMyView, where storytelling is used as one of many persuasive strategies, illustrating that
+    our data and models can be used for both inter- and intra-community research. Finally, we discuss
+    implications of our tools and analyses for narratology and the study of online communities.
+  summary: 'The StorySeeker toolkit: an annotated dataset of 502 Reddit posts and comments, a codebook,
+    and models that detect where people are telling stories across hundreds of online communities.'
+- title: 'AFaCTA: Assisting the Annotation of Factual Claim Detection with Reliable LLM Annotators'
+  meta: (with Jingwei Ni, Minjing Shi, Dominik Stammbach, Mrinmaya Sachan, Markus Leippold), ACL (2024)
+  url: https://aclanthology.org/2024.acl-long.104/
+  links:
+  - text: Code
+    url: https://github.com/EdisonNi-hku/AFaCTA
+  abstract: 'With the rise of generative AI, automated fact-checking methods to combat misinformation
+    are becoming more and more important. However, factual claim detection, the first step in a fact-checking
+    pipeline, suffers from two key issues that limit its scalability and generalizability: (1) inconsistency
+    in definitions of the task and what a claim is, and (2) the high cost of manual annotation. To address
+    (1), we review the definitions in related work and propose a unifying definition of factual claims
+    that focuses on verifiability. To address (2), we introduce AFaCTA (Automatic Factual Claim deTection
+    Annotator), a novel framework that assists in the annotation of factual claims with the help of large
+    language models (LLMs). AFaCTA calibrates its annotation confidence with consistency along three predefined
+    reasoning paths. Extensive evaluation and experiments in the domain of political speech reveal that
+    AFaCTA can efficiently assist experts in annotating factual claims and training high-quality classifiers,
+    and can work with or without expert supervision. Our analyses also result in PoliClaim, a comprehensive
+    claim detection dataset spanning diverse political topics.'
+  summary: Uses large language models as annotators for detecting factual claims — the first step of automated
+    fact-checking — with a unified, verifiability-based definition of what counts as a claim.
+- title: Revisiting Automated Topic Model Evaluation with Large Language Models
+  meta: (with Dominik Stammbach, Vilém Zouhar, Alexander Hoyle, and Mrinmaya Sachan), EMNLP (2023)
+  url: https://arxiv.org/abs/2305.12152
+  links:
+  - text: GitHub Repository
+    url: https://github.com/dominiksinsaarland/evaluating-topic-model-output
+  abstract: Topic models are used to make sense of large text collections. However, automatically evaluating
+    topic model output and determining the optimal number of topics both have been longstanding challenges,
+    with no effective automated solutions to date. This paper proposes using large language models to
+    evaluate such output. We find that large language models appropriately assess the resulting topics,
+    correlating more strongly with human judgments than existing automated metrics. We then investigate
+    whether we can use large language models to automatically determine the optimal number of topics.
+    We automatically assign labels to documents and choosing configurations with the most pure labels
+    returns reasonable values for the optimal number of topics.
+  summary: Shows that large language models judge topic-model output closer to how humans do than any
+    existing automatic metric, and can be used to choose the number of topics.
+- title: Human-Guided Fair Classification for Natural Language Processing
+  meta: (with Florian Dorner, Momchil Peychev, Nikola Konstantinov, Naman Goel, Martin Vechev), ICLR (2023)
+  url: https://arxiv.org/abs/2212.10154
+  links:
+  - text: Code
+    url: https://github.com/eth-sri/fairness-feedback-nlp
+  - text: Poster
+    url: https://iclr.cc/media/PosterPDFs/ICLR%202023/10687.png
+  - text: Video
+    url: https://iclr.cc/virtual/2023/poster/10687
+  abstract: Text classifiers have promising applications in high-stake tasks such as resume screening
+    and content moderation. These classifiers must be fair and avoid discriminatory decisions by being
+    invariant to perturbations of sensitive attributes such as gender or ethnicity. However, there is
+    a gap between human intuition about these perturbations and the formal similarity specifications capturing
+    them. While existing research has started to address this gap, current methods are based on hardcoded
+    word replacements, resulting in specifications with limited expressivity or ones that fail to fully
+    align with human intuition (e.g., in cases of asymmetric counterfactuals). This work proposes novel
+    methods for bridging this gap by discovering expressive and intuitive individual fairness specifications.
+    We show how to leverage unsupervised style transfer and GPT-3’s zero-shot capabilities to automatically
+    generate expressive candidate pairs of semantically similar sentences that differ along sensitive
+    attributes. We then validate the generated pairs via an extensive crowdsourcing study, which confirms
+    that a lot of these pairs align with human intuition about fairness in the context of toxicity classification.
+    Finally, we show how limited amounts of human feedback can be leveraged to learn a similarity specification
+    that can be used to train downstream fairness-aware models. [ ][ ][ ].
+  summary: Lets humans specify fairness requirements in plain language (e.g., 'gender swaps shouldn't
+    change the outcome'), formalizes them, and trains text classifiers that respect them better than hardcoded
+    word-swapping rules.
+- title: 'MemSum: Extractive Summarization of Long Documents using Multi-step Episodic Markov Decision
+    Processes'
+  meta: (with Nianlong Gu and Richard Hahnloser), ACL (2022)
+  url: https://arxiv.org/abs/2107.08929
+  links:
+  - text: MemSum Open-Source Package and Documentation
+    url: https://github.com/nianlonggu/MemSum
+  abstract: 'We introduce MemSum (Multi-step Episodic Markov decision process extractive SUMmarizer),
+    a reinforcement-learning-based extractive summarizer enriched at any given time step with information
+    on the current extraction history. Similar to previous models in this vein, MemSum iteratively selects
+    sentences into the summary. Our innovation is in considering a broader information set when summarizing
+    that would intuitively also be used by humans in this task: 1) the text content of the sentence, 2)
+    the global text context of the rest of the document, and 3) the extraction history consisting of the
+    set of sentences that have already been extracted. With a lightweight architecture, MemSum nonetheless
+    obtains state-of-the-art test-set performance (ROUGE score) on long document datasets (PubMed, arXiv,
+    and GovReport). Supporting analysis demonstrates that the added awareness of extraction history gives
+    MemSum robustness against redundancy in the source document.'
+  summary: An extractive summarizer that picks sentences one at a time while tracking what it has already
+    extracted, matching or beating much larger models on summarizing long documents.

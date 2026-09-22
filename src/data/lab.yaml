@@ -1,0 +1,33 @@
+name: AI and Economics Lab
+short_name: AI & Economics Lab
+tagline: Modern AI methods for economic and social-science research
+location: ETH Zurich
+email: ashe@ethz.ch
+mission: >-
+  The AI and Economics Lab at ETH Zurich develops and applies machine learning,
+  multimodal data methods, large language models, and AI agents to economic and
+  social-science questions — measurement, causal inference, institutions, media,
+  and the productivity of knowledge work.
+themes:
+  - title: ML and econometrics
+    blurb: Prediction, causal methods, and structured empirical design with modern ML.
+  - title: Text and image as data
+    blurb: Turning unstructured media, documents, and imagery into research-ready measures.
+  - title: LLMs and alignment
+    blurb: Using and evaluating large language models for economic and institutional settings.
+  - title: AI agents and research software
+    blurb: Agent workflows, reproducible pipelines, and AI-assisted scientific software.
+  - title: AI in markets, media, and institutions
+    blurb: Field and observational studies of how AI reshapes information, law, and public systems.
+affiliations:
+  - text: ETH Zurich
+    url: https://ethz.ch/
+  - text: Swiss AI Initiative
+    url: https://www.swiss-ai.org/
+  - text: ETH AI Center
+    url: https://ai.ethz.ch/
+links:
+  - text: Elliott Ash
+    url: https://elliottash.com/
+  - text: Google Scholar
+    url: https://scholar.google.com/citations?user=o5uDfHMAAAAJ&hl=en

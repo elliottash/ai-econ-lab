@@ -1,0 +1,319 @@
+# Peer-Reviewed Journal Articles. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: 'Seeing and Hearing is Believing: The Role of Audiovisual Communication in Shaping Inflation
+    Expectations'
+  meta: (with Heiner Mikosch, Alexis Perakis, and Samad Sarferaz), European Economic Review (2026)
+  pdf: https://elliottash.com/papers/Ash-Mikosch-Perakis-Sarferaz-2024-Seeing_and_hearing_is_believing.pdf
+  abstract: 'This paper presents novel causal evidence on the relationship between various communication
+    channels employed by central banks and households’ expectations about future inflation. In a pre-registered
+    randomized survey experiment administered in 2022, we examine adjustment of inflation expectations
+    when confronted with a press conference statement by the president of the European Central Bank (ECB)
+    articulating the bank’s commitment to a 2% inflation target. First, we replicate previous literature
+    showing that respondents update toward the inflation target. Second, we show that the medium of communication
+    matters, holding the target message constant: Relative to a text transcript, audiovisual mediums (audio,
+    photograph, or video) strengthen updating toward the target. In particular, dynamic mediums that communicate
+    the target through multiple sensory channels (audio and video) are most effective in moving inflation
+    expectations. In an analysis of mechanisms, we can rule out increased attentiveness to the survey
+    and increased trust in the ECB as pivotal drivers of these effects. In a heterogeneity analysis, we
+    find that economically less-informed respondents (those consuming less economic news) are more responsive
+    in updating to audiovisual mediums. Overall, these results suggest that the use of audiovisual communications
+    technology improves the information quality of central bank messaging and makes that messaging easier
+    to process for less-informed households.'
+  summary: In a randomized survey experiment, an ECB press-conference statement moved households' inflation
+    expectations toward the 2 percent target, and the medium of communication — audio and video versus
+    text — shaped how much people updated.
+- title: From Viewers to Voters:Tracing Fox News’ Impact on American Democracy
+  meta: (with Sergio Galletta, Matteo Pinna, and Christopher Warshaw), Journal of Public Economics (2024)
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3837457
+  abstract: This paper provides a comprehensive assessment of the effect of Fox News Channel (FNC) on
+    elections in the United States. FNC is the highest-rated channel on cable television and has a documented
+    conservative slant. We show that FNC has helped Republican candidates in elections across levels of
+    U.S. government over the past decade. A one standard deviation decrease in FNC’s channel position
+    boosted Republican vote shares by at least .5 percentage points in recent presidential, Senate, House
+    and gubernatorial elections. The effects of FNC increased steadily between 2004 and 2016 and then
+    plateaued. Survey-based evidence suggests that FNC affects elections by shifting the political preferences
+    of Americans to the right. Overall, the findings suggest that FNC has contributed to the nationalization
+    of United States elections.
+  summary: Uses quasi-random variation in Fox News' channel position to show the network raised Republican
+    vote shares by at least half a percentage point across U.S. presidential, Senate, House, and governors'
+    races, with effects growing from 2004 to 2016.
+- title: What is (and was) a Person? Evidence on Historical Mind Perceptions from Natural Language
+  meta: (with Dominik Stammbach and Kevin Tobia), Cognition (2023)
+  url: https://ssrn.com/abstract=3959847
+  abstract: 'An important philosophical tradition identifies persons as those entities that have minds,
+    such that mind perception is a window into person perception. Psychological research has found that
+    human perceptions of mind consist of at least two distinct dimensions: agency (e.g. planning, deciding)
+    and experience (e.g. feeling, hungering). Taking this insight into the semantic space of natural language,
+    we develop a generalizable, scalable computational-linguistics method for measuring variation in perceived
+    agency and experience in large archives of plain-text documents. The resulting text-based rankings
+    of entities along these dimensions correspond to human judgments of perceived agency and experience
+    assessed in blind surveys. We then map both dimensions of mind in historical English-language corpora
+    over the last 200 years and identify two salient trends. First, we find that while women are now described
+    as having similar levels of agency as men, they are still described as more experience-oriented. Second,
+    we find that domesticated animals have gained higher attributions of experience (but not agency) relative
+    to wild animals, especially since the rise of the global animal rights movement in the 1980s.'
+  summary: Develops a computational-linguistics method for measuring perceived agency and experience —
+    the two dimensions of mind perception — in large text archives, and uses it to trace which entities
+    people have treated as 'persons' over time.
+- title: The Effect of Fox News on Health Behavior during COVID-19
+  meta: (with Sergio Galletta, Dominik Hangartner, Yotam Margalit, and Matteo Pinna) Political Analysis
+    (2023)
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3636762
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/ABOTUG
+  press:
+  - text: Hollywood Reporter
+    url: https://www.hollywoodreporter.com/news/politics-news/studies-link-viewership-fox-news-reduced-pandemic-precaution-4083300/
+  abstract: 'In the early weeks of the 2020 coronavirus (COVID-19) pandemic, Fox News Channel advanced
+    a skeptical narrative that downplayed the risks posed by the virus. We find that this narrative had
+    significant consequences: in localities with higher Fox News viewership—exogenous due to random variation
+    in channel positioning—people were less likely to adopt behaviors geared toward social distancing
+    (e.g., staying at home) and consumed less goods in preparation (e.g., cleaning products, hand sanitizers,
+    masks). Using original survey data, we find that the effect of Fox News came not merely from its long-standing
+    distrustful stance toward science, but also due to program-specific content that minimized the COVID-19
+    threat.'
+  summary: In the early pandemic, localities with higher Fox News viewership (driven by channel positioning,
+    not preferences) social-distanced less and bought fewer protective goods, with effects extending beyond
+    the network's own viewers.
+- title: 'Detecting the Influence of Chinese Guiding Cases: A Text Reuse Approach'
+  meta: (with Benjamin Minhao Chen, Zhiyu Li, and David Cai), Artificial Intelligence and Law (2023)
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4393725
+  abstract: Socialist courts are supposed to apply the law, not make it, and socialist legality denies
+    judicial decisions any precedential status. In 2011, however, the Chinese Supreme People’s Court designated
+    selected decisions as Guiding Cases to be referred to by all judges when adjudicating similar disputes.
+    One decade on, the paucity of citations to Guiding Cases has been taken as demonstrating the incongruity
+    of case-based adjudication and socialist legality. Citations are, however, an imperfect measure of
+    influence. Reproduction of language uniquely traceable to Guiding Cases can also be evidence of their
+    impact on judicial decision-making. We employ a local alignment tool to detect unattributed text reuse
+    of Guiding Cases in local court decisions. Our findings suggest that the Guiding Cases are more consequential
+    than commonly assumed, thereby challenging prevailing narratives about the antagonism of socialist
+    legality to case law.
+  summary: Measures whether Chinese courts actually use the Supreme People's Court's Guiding Cases by
+    detecting reused language rather than citations, showing case-based influence in a system that formally
+    denies precedent.
+- title: The Choice of Knowledge Base in Automated Claim Checking
+  meta: (with Dominik Stammbach and Boya Zhang), Journal of Data and Information Quality (2023)
+  url: https://arxiv.org/abs/2111.07795
+  abstract: Automated claim checking is the task of determining the veracity of a claim given evidence
+    found in a knowledge base of trustworthy facts. While previous work has taken the knowledge base as
+    given and optimized the claim-checking pipeline, we take the opposite approach – taking the pipeline
+    as given, we explore the choice of knowledge base. Our first insight is that a claim-checking pipeline
+    can be transferred to a new domain of claims with access to a knowledge base from the new domain.
+    Second, we do not find a “universally best” knowledge base – higher domain overlap of a task dataset
+    and a knowledge base tends to produce better label accuracy. Third, combining multiple knowledge bases
+    does not tend to improve performance beyond using the closest-domain knowledge base. Finally, we show
+    that the claim-checking pipeline’s confidence score for selecting evidence can be used to assess whether
+    a knowledge base will perform well for a new set of claims, even in the absence of ground-truth labels.
+  summary: Finds that an automated fact-checking pipeline can be transferred to a new claim domain by
+    swapping in a domain knowledge base, and that no knowledge base is universally best — domain overlap
+    with the claims matters.
+- title: Mindfulness reduces information avoidance
+  meta: (with Daniel Sgroi, Anthony Tuckwell, and Shi Zhuo). Economics Letters (2023)
+  pdf: https://elliottash.com/papers/Ash-Sgroi-Tuckwell-Zhuo.pdf
+  abstract: 'Mindfulness meditation has been found to influence various important outcomes such as health,
+    stress, depression, productivity, and altruism. We report evidence from a randomised-controlled trial
+    on a previously untested effect of mindfulness: information avoidance. We find that a relatively short
+    mindfulness treatment (two weeks, 15 minutes a day) is able to induce a statistically significant
+    reduction in information avoidance — that is, avoiding information that may cause worry or regret.
+    Supplementary evidence supports mindfulness’s effects on emotion regulation as a possible mechanism
+    for the effect.'
+  summary: A randomized controlled trial shows two weeks of brief daily meditation (15 minutes) makes
+    people less likely to avoid information that could worry or upset them, with emotion regulation as
+    the likely mechanism.
+- title: Polarization and Political Selection
+  meta: (with Tinghua Yu). Journal of Political Institutions and Political Economy (2022)
+  pdf: https://www.dropbox.com/s/2d1ccysrtqppqoa/YuAshJPub.pdf?raw=1
+  abstract: Does political polarization among voters affect the quality of elected officials? We examine
+    the question both theoretically and empirically. In our model, high quality candidates prefer to spend
+    time on their current careers over electoral campaigning. In a polarized electorate, however, voters
+    cast their votes mainly based on candidates’ party affiliations, reducing electoral campaign effort
+    in equilibrium. Hence under higher polarization among voters, higher quality candidates are more likely
+    to run for high office and to get elected. Our testable prediction is that electorates with higher
+    polarization select candidates who perform better. We take the predictions to data on judges’ performance
+    constructed from the opinions of all state supreme court judges working between 1965 and 1994. We
+    find that judges who joined the court when polarization was high write higher-quality decisions (receiving
+    more citations from other judges) than judges who joined when polarization was low.
+  summary: 'Theory and evidence that voter polarization can improve the quality of elected officials:
+    when votes follow party lines, high-quality candidates face less pressure to campaign, so more of
+    them run and win in polarized electorates.'
+- title: 'Measuring Judicial Sentiment: Methods and Application to U.S. Circuit Courts'
+  meta: (with Sergio Galletta and Daniel L. Chen) Economica (2021)
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3415393
+  abstract: This paper provides a general method for analyzing the sentiments expressed in the language
+    of judicial rulings. We apply natural language processing tools to the text of U.S. appellate court
+    opinions to extrapolate judges’ sentiments (positive/good vs. negative/bad) toward a number of target
+    social groups. We explore descriptively how these sentiments vary over time and across types of judges.
+    In addition, we provide a method for using random assignment of judges in an instrumental variables
+    framework to estimate causal effects of judges’ sentiments. In an empirical application, we show that
+    more positive sentiment influences future judges by increasing the likelihood of reversal but also
+    increasing the number of forward citations.
+  summary: Uses text analysis to measure the sentiment judges express toward social groups in appellate
+    opinions, and pairs the measure with random judge assignment to estimate its causal effects on case
+    outcomes.
+- title: 'Reducing Partisanship in Judicial Elections Can Improve Judge Quality: Evidence from U.S. State
+    Supreme Courts'
+  meta: (with W. Bentley MacLeod), Journal of Public Economics (2021)
+  url: https://www.sciencedirect.com/science/article/pii/S0047272721001146
+  links:
+  - text: Replication Notebook
+    url: https://www.dropbox.com/s/khg4w23ll8nqjvc/replication-selection.html?dl=1
+  abstract: Should technocratic public officials be selected through politics or by merit? This paper
+    explores how selection procedures influence the quality of selected officials in the context of U.S.
+    state supreme courts for the years 1947-1994. In a unique set of natural experiments, state governments
+    enacted a variety of reforms making judicial elections less partisan and establishing merit-based
+    procedures that delegate selection to experts. We compare post-reform judges to pre-reform judges
+    in their work quality, measured by forward citations to their opinions. In this setting we can hold
+    constant contemporaneous incentives and the portfolio of cases, allowing us to produce causal estimates
+    under an identification assumption of parallel trends in quality by judge starting year. We find that
+    judges selected by nonpartisan processes (nonpartisan elections or technocratic merit commissions)
+    produce higher-quality work than judges selected by partisan elections. These results are consistent
+    with a representative voter model in which better technocrats are selected when the process has less
+    partisan bias or better information regarding candidate ability.
+  summary: U.S. state reforms that made supreme-court elections less partisan, 1947–1994, raised the quality
+    of sitting judges as measured by how often later courts cite their opinions.
+- title: 'Fiscal pressures and discriminatory policing: Evidence from traffic stops in Missouri'
+  meta: (with Allison Harris and Jeffrey Fagan), Journal of Race, Ethnicity, and Politics (2020)
+  pdf: https://www.dropbox.com/s/lwjamqr5t5kruee/Ash-Fagan-Harris_JREP-Revisions_8-23-19.pdf?raw=1
+  abstract: 'This paper provides evidence of racial variation in traffic enforcement responses to local
+    government budget stress using data from policing agencies in the state of Missouri from 2001 through
+    2012. Like previous studies, we find that local budget stress is associated with higher citation rates;
+    we also find an increase in traffic-stop arrest rates. However, we find that these effects are concentrated
+    among white (rather than black or Latino) drivers. The results are robust to the inclusion of a range
+    of covariates and a variety of model specifications, including a a regression-discontinuity examining
+    bare budget shortfalls. Considering potential mechanisms, we find that targeting of white drivers
+    is higher where the white-to-black income ratio is higher, consistent with the targeting of drivers
+    who are better able to pay fines. Further, the relative effect on white drivers is higher in areas
+    with statistical over-policing of black drivers: when black drivers are already getting too many fines,
+    police cite white drivers from whom they are presumably more likely to be able to raise the needed
+    extra revenue. These results highlight the relationship between policing-as-taxation and racial inequality
+    in policing outcomes.'
+  summary: When Missouri towns faced budget stress, traffic citations and arrests rose — but the increase
+    fell on white drivers, not Black or Latino drivers, contrary to a revenue-driven discriminatory-policing
+    reading.
+- title: 'Measuring Discretion and Delegation in Legislative Texts: Methods and Application to U.S. States'
+  meta: (with Massimo Morelli and Matia Vannoni), Political Analysis (2020)
+  pdf: https://www.dropbox.com/s/z5oox30vym6j4kw/Vannoni-Ash-Morelli-PA2020.pdf?raw=1
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/FQTA4A
+  press:
+  - text: Bocconi Knowledge (2021)
+    url: https://www.knowledge.unibocconi.eu/notizia.php?idArt=22687
+  abstract: Bureaucratic discretion and executive delegation are central topics in political economy and
+    political science. The previous empirical literature has measured discretion and delegation by manually
+    coding large bodies of legislation. Drawing from computational linguistics, we provide an automated
+    procedure for measuring discretion and delegation in legal texts to facilitate large-scale empirical
+    analysis. The method uses information in syntactic parse trees to identify legally relevant provisions,
+    as well as agents and delegated actions. We undertake two applications. First, we produce a measure
+    of bureaucratic discretion by looking at the level of legislative detail for U.S. states and find
+    that this measure increases after reforms giving agencies more independence. This effect is consistent
+    with an agency cost model where a more independent bureaucracy requires more specific instructions
+    (less discretion) to avoid bureaucratic drift. Second, we construct measures of delegation to governors
+    in state legislation. Consistent with previous estimates using non-text metrics, we find that executive
+    delegation increases under unified government.
+  summary: An automated method that reads the syntax of legislation to measure how much discretion laws
+    leave to bureaucrats and how much authority they delegate, replacing manual coding and enabling large-scale
+    applications to U.S. states.
+- title: Divided Government, Delegation, and Civil Service Reform
+  meta: (with Massimo Morelli and Matia Vannoni), Political Science Research and Methods (2020)
+  pdf: https://www.dropbox.com/s/kudem40xmewposv/AshMorelliVannoni_PSRM2020.pdf?raw=1
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/C13Z0X
+  abstract: 'This paper sheds new light on the drivers of civil service reform in U.S. states. We first
+    demonstrate theoretically that divided government is a key trigger of civil service reform, providing
+    nuanced predictions for specific configurations of divided government. We then show empirical evidence
+    for these predictions using data from the second half of the 20th century: states tended to introduce
+    these reforms under divided government, and in particular when legislative chambers (rather than legislature
+    and governor) were divided.'
+  summary: Shows that divided government — especially split legislative chambers — pushed U.S. states
+    to adopt civil-service reforms in the second half of the 20th century, consistent with a theory of
+    parties insulating policy from opponents.
+- title: A research-based ranking of public policy schools
+  meta: (with Miguel Urquiola), Scientometrics (2020)
+  url: http://link.springer.com/article/10.1007/s11192-020-03625-z
+  abstract: This paper presents rankings of U.S. public policy schools based on their research publication
+    output. In 2016 we collected the names of about 5,000 faculty members at 44 such schools. We use bibliographic
+    databases to gather measures of the quality and quantity of these individuals’ academic publications.
+    These measures include the number of articles and books written, the quality of the journals the articles
+    have appeared in, and the number of citations all have garnered. We aggregate these data to the school
+    level to produce a set of rankings. The results differ significantly from existing rankings, and in
+    addition display substantial across-field variation.
+  summary: Ranks 44 U.S. public-policy schools by the publication records of about 5,000 faculty, producing
+    research-based rankings that differ substantially from the familiar reputation-based ones.
+- title: Text classification of ideological direction in judicial opinions
+  meta: (with Carina Hausladen and Marcel Schubert), International Review of Law and Economics (2020)
+  url: https://doi.org/10.1016/j.irle.2020.105903
+  abstract: This paper draws on machine learning methods for text classification to predict the ideological
+    direction of decisions from the associated text. Using a 5% hand-coded sample of cases from U.S. Circuit
+    Courts, we explore and evaluate a variety of machine classifiers to predict “conservative decision”
+    or “liberal decision” in held-out data. Our best classifier is highly predictive ( F1=.65 ) and allows
+    us to extrapolate ideological direction to the full sample. We then use these predictions to replicate
+    and extend Landes and Posner’s (2009) analysis of how the party of the nominating president influences
+    circuit judge’s votes.
+  summary: Machine classifiers predict whether a Circuit Court decision is conservative or liberal from
+    its text with useful accuracy (F1 = 0.65), extending ideological coding from a hand-labeled sample
+    to decades of cases.
+- title: Automated Fact-Value Distinction in Court Opinions
+  meta: (with Yu Cao and Daniel L. Chen), European Journal of Law and Economics (2020)
+  url: https://doi.org/10.1007/s10657-020-09645-7
+  abstract: This paper studies the problem of automated classification of fact statements and value statements
+    in written judicial decisions. We compare a range of methods and demonstrate that the linguistic features
+    of sentences and paragraphs can be used to successfully classify them along this dimension. The Wordscores
+    method by Laver et al. (2003) performs best in held out data. In an application, we show that the
+    value segments of opinions are more informative than fact segments of the ideological direction of
+    U.S. Circuit Court opinions.
+  summary: Classifies sentences in judicial opinions as statements of fact or statements of value, and
+    finds the value-laden segments carry more information about the ideological direction of the decision.
+- title: Sequential decision-making with group identity
+  meta: (with Jessica Van Parys), Journal of Economic Psychology (2018)
+  pdf: https://www.dropbox.com/s/lgce6ar0o5puib2/revised.manuscript.7.16.2018.pdf?raw=1
+  abstract: In sequential decision-making experiments, participants often conform to the decisions of
+    others rather than reveal private information — resulting in less information produced and potentially
+    lower payoffs for the group. This paper asks whether experimentally induced group identity affects
+    players’ decisions to conform, even when payoffs are only a function of individual actions. As motivation
+    for the experiment, we show that U.S. Supreme Court Justices in preliminary hearings are more likely
+    to conform to their same-party predecessors when the share of predecessors from their party is high.
+    Lab players, in turn, are more likely to conform to the decisions of in-group members when their share
+    of in-group predecessors is high. We find that exposure to information from in-group members increases
+    the probability of reverse information cascades (herding on the wrong choice), reducing average payoffs.
+    Therefore, alternating decision-making across members of different groups may improve welfare in sequential
+    decision-making contexts.
+  summary: Laboratory experiment showing that experimentally induced group identity changes how much people
+    conform to earlier deciders in sequence — with motivation from U.S. Supreme Court justices following
+    same-party predecessors.
+- title: 'Intrinsic motivation in public service: Theory and evidence from state supreme courts'
+  meta: (with W. Bentley MacLeod), Journal of Law and Economics (2015)
+  pdf: https://www.dropbox.com/s/6ooth6xq48apmw3/Ash-MacLeod-2015-JLE.pdf?raw=1
+  links:
+  - text: Replication Files
+    url: https://elliottash.com/papers/Ash-MacLeod-2015-Replication.zip
+  abstract: This paper provides a theoretical and empirical analysis of the intrinsic preferences of state
+    appellate court judges. We construct a panel data set using published decisions from state supreme
+    court cases merged with institutional and biographical information on all (1,636) state supreme court
+    judges for the 50 states of the United States from 1947 to 1994. We estimate the effects of changes
+    in judge employment conditions on a number of measures of judicial performance. The results are consistent
+    with the hypothesis that judges are intrinsically motivated to provide high-quality decisions, and
+    that at the margin they prefer quality over quantity. When judges face less time pressure, they write
+    more well-researched opinions that are cited more often by later judges. When judges are up for election
+    then performance falls, suggesting that election politics take time away from judging work – rather
+    than providing an incentive for good performance. These effects are strongest when judges have more
+    discretion to select their case portfolio, consistent with psychological theories that posit a negative
+    effect of contingency on motivation.
+  summary: Studies 1,636 state supreme court judges, 1947–1994, and finds that worsening employment conditions
+    barely dented their output, consistent with public-service motivation rather than pay-driven effort.
+- title: On the Behavioral Economics of Crime
+  meta: (with Frans van Winden), Review of Law & Economics (2012)
+  pdf: https://elliottash.com/papers/VanWinden-Ash-2012-Behavioral-Economics-Crime.pdf
+  abstract: This paper examines the implications of the brain sciences’ mechanistic model of human behavior
+    for our understanding of crime. The standard rational-choice crime model is refined by a behavioral
+    approach, which proposes a decision model comprising cognitive and emotional decision systems. According
+    to the behavioral approach, a criminal is not irrational but rather ‘ecologically rational,’ outfitted
+    with evolutionarily conserved decision modules adapted for survival in the human ancestral environment.
+    Several important cognitive as well as emotional factors for criminal behavior are discussed and formalized,
+    using tax evasion as a running example. The behavioral crime model leads to new perspectives on criminal
+    policy-making.
+  summary: Reworks the rational-choice model of crime to include cognitive and emotional decision systems,
+    treating offenders as ecologically rational rather than irrational and drawing out implications for
+    criminal-justice policy.

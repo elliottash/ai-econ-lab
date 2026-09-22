@@ -1,0 +1,207 @@
+# Selected Publications — Economics. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: 'Ideas Have Consequences: The Impact of Law and Economics on American Justice'
+  meta: (with Daniel L. Chen and Suresh Naidu), Quarterly Journal of Economics (2026)
+  pdf: https://elliottash.com/papers/Ash-Chen-Naidu-Ideas-Have-Consequences-Impact-Law-Economics-American-Justice.pdf
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/XATYFX
+  press:
+  - text: NPR Planet Money Podcast
+    url: https://www.npr.org/2022/09/22/1124477182/federal-judges-economics-boot-camp
+  - text: Economist article
+    url: https://www.economist.com/finance-and-economics/2023/09/07/how-chicago-school-economists-reshaped-american-justice
+  - text: Vox article
+    url: https://www.vox.com/future-perfect/2019/6/1/18629859/judge-resort-weekend-naidu-manne-seminar-ginsburg
+  abstract: This paper empirically studies the effects of the early law-and-economics movement on the
+    U.S. judiciary. We focus on the Manne Economics Institute for Federal Judges, an intensive economics
+    course that trained almost half of federal judges between 1976 and 1999. Using the universe of published
+    opinions in U.S. Circuit Courts and 1 million District Court criminal sentencing decisions, we estimate
+    the within-judge effect of Manne program attendance. Selection into attendance was limited, as the
+    program was popular among judges of all backgrounds, frequently oversubscribed, and admitted participants
+    on a first-come, first-served basis. We find that after attending economics training, participating
+    judges use more economics language in their opinions, rule against regulatory agencies more often,
+    and impose more severe criminal sentences. We argue that economics, as a rigorous social science,
+    was especially effective in persuading judges.
+  summary: The Manne economics course trained nearly half of U.S. federal judges between 1976 and 1999;
+    attendees subsequently wrote more economics-laden opinions, ruled against regulators more often, and
+    imposed harsher criminal sentences.
+- title: More Laws, More Growth? Evidence from U.S. States
+  meta: (with Massimo Morelli and Matia Vannoni), Journal of Political Economy (2025)
+  pdf: https://elliottash.com/papers/Ash-Morelli-Vannoni-Laws-Growth-2022-04v4.pdf
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/DNSNSU
+  press:
+  - text: VoxEU
+    url: https://voxeu.org/article/regulation-and-economic-growth-contingent-relationship
+  abstract: This paper analyzes the conditions under which more legislation contributes to economic growth.
+    In the context of U.S. states, we apply natural language processing tools to measure legislative flows
+    for the years 1965-2012. We implement a novel shift-share design for text data, where the instrument
+    for legislation is leave-one-out legal-topic flows interacted with pre-treatment legal-topic shares.
+    We find that at the margin, higher legislative output causes more economic growth. Consistent with
+    more complete laws reducing ex-post hold-up, we find that the effect is driven by the use of contingent
+    clauses, is largest in sectors with high relationship-specific investments, and is increasing with
+    local economic uncertainty.
+  summary: Measures U.S. state legislation with text analysis, 1965–2012, and finds a causal growth dividend
+    of legislative output — concentrated in contingent clauses and sectors where incomplete contracts
+    hurt investment most.
+- title: A Machine Learning Approach to Analyze and Support Anti-Corruption Policy
+  meta: '(with Sergio Galletta and Tommaso Giommoni), American Economic Journal: Economic Policy (2025)'
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3589545
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.3886/E197821V1
+  abstract: Can machine learning support better governance? In the context of Brazilian municipalities,
+    2001-2012, we have access to detailed accounts of local budgets and audit data on the associated fiscal
+    corruption. Using the budget variables as predictors, we train a tree-based gradient-boosted classifier
+    to predict the presence of corruption in held-out test data. The trained model, when applied to new
+    data, provides a prediction-based measure of corruption which can be used for new empirical analysis
+    or to support policy responses. We validate the empirical usefulness of this measure by replicating,
+    and extending, some previous empirical evidence on corruption issues in Brazil. We then explore how
+    the predictions can be used to support policies toward corruption. Our policy simulations show that,
+    relative to the status quo policy of random audits, a targeted policy guided by the machine predictions
+    could detect more than twice as many corrupt municipalities for the same audit rate.
+  summary: Trains gradient-boosted models on audited Brazilian municipal budgets to predict where corruption
+    is likely, giving auditors a targeting tool and researchers a prediction-based corruption measure
+    for unaudited years.
+- title: 'In-group bias in the Indian judiciary: Evidence from 5 million criminal cases'
+  meta: (with Sam Asher, Aditi Bhowmick, Sandeep Bhupatiraju, Daniel L. Chen, Tanaya Devi, Christoph Goessmann,
+    Paul Novosad, Bilal Siddiqi), Review of Economics and Statistics (2025)
+  url: http://www.devdatalab.org/judicial-bias
+  links:
+  - text: Data and source code
+    url: https://www.devdatalab.org/judicial-data
+  - text: Gender classifier web app
+    url: http://gender-classifier.devdatalab.org/
+  press:
+  - text: The Indian Express
+    url: https://indianexpress.com/article/india/district-courts-order-gender-religion-bias-7181919/
+  - text: Economic & Political Weekly
+    url: https://www.epw.in/journal/2021/8/law-and-society/two-papers-judicial-bias-india.html
+  abstract: We study judicial in-group bias in Indian criminal courts using a newly collected dataset
+    on over 5 million criminal case records from 2010-2018. After detecting gender and religious identity
+    using a neural-net classifier applied to judge and defendant names, we exploit quasi-random assignment
+    of cases to judges to examine whether defendant outcomes are affected by assignment to a judge with
+    a similar identity. In the aggregate, we estimate tight zero effects of in-group bias based on shared
+    gender, religion, and last name (a proxy for caste). We do find limited in-group bias in some (but
+    not all) settings where identity is salient — in particular, we find a small religious in-group bias
+    during Ramadan, and we find shared-name in-group bias when judge and defendant match on a rare last
+    name.
+  summary: Across 5 million Indian criminal cases with quasi-random judge assignment, and identity detected
+    from names by a neural classifier, estimates tight zero effects of shared gender, religion, or caste
+    proxy on defendant outcomes in the aggregate.
+- title: Media Slant is Contagious
+  meta: (with Clémentine Abed Meraim, Philine Widmer, and Sergio Galletta), Economic Journal (conditionally
+    accepted)
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3712218
+  abstract: This paper examines the diffusion of media slant, specifically how partisan content from national
+    cable news affects local newspapers in the U.S., 2005-2008. We use a text-based measure of cable news
+    slant trained on content from Fox News Channel (FNC), CNN, and MSNBC to analyze how local newspapers
+    adopt FNC’s slant over CNN/MSNBC’s. Our findings show that local news becomes more similar to FNC
+    content in response to an exogenous increase in local FNC viewership. This shift is not limited to
+    borrowing from cable news, but rather, local newspapers’ own content changes. Further, cable TV slant
+    polarizes local news content.
+  summary: When Fox News viewership rises exogenously in a market, local newspapers' own coverage shifts
+    toward Fox's slant — not by borrowing its content, but by moving their writing.
+- title: Mandatory Retirement Reforms for Judges Improved Performance on U.S. State Supreme Courts
+  meta: '(with W. Bentley MacLeod), American Economic Journal: Economic Policy (2024)'
+  pdf: https://elliottash.com/papers/Ash-MacLeod-Mandatory-Judges-Improved-Performance-US-State-Supreme-Courts.pdf
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.3886/E185261V1
+  press:
+  - text: VoxEU
+    url: https://cepr.org/voxeu/columns/what-retirement-policy-us-state-courts-tells-us-about-ageing-and-productivity-teams
+  - text: NPR On Point
+    url: https://www.wbur.org/onpoint/2023/04/27/should-there-be-a-mandatory-retirement-age-for-elected-officials
+  abstract: 'Anecdotal evidence often points to aging as a cause for reduced work performance. This paper
+    provides empirical evidence on this issue in a context where performance is measurable and there is
+    variation in mandatory retirement policies: U.S. state supreme courts. We find that introducing mandatory
+    retirement reduces the average age of working judges and improves court performance, as measured by
+    output (number of published opinions) and legal impact (number of forward citations to those opinions).
+    Consistent with aging effects as a contributing factor, we find that older judges do about the same
+    amount of work as younger judges, but that work is lower-quality as measured by citations. However,
+    the effect of mandatory retirement on performance is much larger than what would be expected from
+    the change in the age distribution, suggesting that the presence of older judges reduces the performance
+    of younger judges.'
+  summary: U.S. states that introduced mandatory retirement for supreme court judges lowered the bench's
+    average age and raised its output of opinions and the citations they attract.
+- title: 'Gender Attitudes in the Judiciary: Evidence from U.S. Circuit Courts'
+  meta: '(with Arianna Ornaghi and Daniel L. Chen), American Economic Journal: Applied Economics (2024)'
+  pdf: https://elliottash.com/papers/Ash-Chen-Ornaghi-2022-04.pdf
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.3886/E169861V1
+  abstract: 'Do gender attitudes influence interactions with female judges in U.S. Circuit Courts? In
+    this paper, we propose a judge-specific measure of gender attitudes based on use of gender-stereotyped
+    language in the judge’s authored opinions. Exploiting quasi-random assignment of judges to cases and
+    conditioning on judges’ characteristics, we validate the measure showing that higher-slant judges
+    vote more conservatively in gender-related cases. Higher-slant judges interact differently with female
+    colleagues: they are more likely to reverse lower-court decisions if the lower-court judge is a woman
+    than a man, are less likely to assign opinions to female judges, and cite fewer female-authored opinions.'
+  summary: Measures judges' gender attitudes from stereotyped language in their own opinions; judges scoring
+    higher vote more conservatively in gender-related cases and interact differently with female colleagues.
+- title: 'Conservative News Media and Criminal Justice: Evidence from Exposure to Fox News Channel'
+  meta: (with Michael Poyker), The Economic Journal (2024)
+  pdf: https://elliottash.com/papers/Ash-Poyker-Fox-Sentencing.pdf
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.5281/zenodo.10201212
+  press:
+  - text: New Statesman
+    url: https://www.newstatesman.com/america/politics/2019/05/how-fox-news-influencing-us-judges
+  - text: The Journalist’s Resource
+    url: https://journalistsresource.org/criminal-justice/fox-news-viewership-long-sentence/
+  abstract: Local exposure to conservative news causes judges to impose harsher criminal sentences. Our
+    evidence comes from an instrumental variables analysis, where randomness in television channel positioning
+    across localities induces exogenous variation in exposure to Fox News Channel. These treatment data
+    on news viewership are taken to outcomes data on almost 7 million criminal sentencing decisions in
+    the United States for the years 2005-2017. Higher Fox News viewership increases incarceration length,
+    and the effect is stronger for black defendants and for drug-related crimes. We can rule out changes
+    in the behavior of police, prosecutors, or potential offenders as significant drivers. Consistent
+    with changes in voter attitudes as the key mechanism, the effect on sentencing harshness is observed
+    for elected (but not appointed) judges. Fox News viewership also increases self-reported beliefs about
+    the importance of drug crime as a social problem. Media Coverage.
+  summary: Quasi-random variation in Fox News channel position, applied to nearly 7 million sentencing
+    decisions, shows conservative-news exposure makes judges incarcerate longer — with larger effects
+    for Black defendants.
+- title: How Cable News Reshaped Local Government
+  meta: '(with Sergio Galletta), American Economic Journal: Applied Economics (2023)'
+  url: https://www.aeaweb.org/articles?id=10.1257/app.20210501&from=f
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.3886/E168941V1
+  abstract: 'This paper shows that partisan cable news broadcasts have a causal effect on the size and
+    composition of budgets in U.S. localities. Using exogenous channel positioning as an instrument for
+    viewership, we show that exposure to the conservative Fox News Channel reduces both revenues and expenditures.
+    Multiple mechanisms drive these results: Fox News improves election chances for local Republicans,
+    alters politician campaign agendas, and directly shifts voter policy preferences on fiscal issues.
+    Consistent with the priorities of small-government conservatism, we find evidence that the reduction
+    in public services is compensated by increased private provision, in particular through higher student
+    attendance at private schools. The “Fox News Effect” is not just limited to vote shares; it also moves
+    policy to the right.'
+  summary: Exogenous exposure to Fox News shrinks local-government budgets — both revenues and spending
+    — by improving Republican electoral fortunes, shifting campaign agendas, and moving voters' fiscal
+    preferences directly.
+- title: Emotion and Reason in Political Language
+  meta: (with Gloria Gennaro) The Economic Journal (2022)
+  url: https://bit.ly/gennaro-ash-emotions
+  links:
+  - text: Replication Files
+    url: https://zenodo.org/records/5748084
+  press:
+  - text: Sage Ocean Blog (2021)
+    url: https://ocean.sagepub.com/blog/emotion-and-reason-in-political-language
+  abstract: We use computational linguistics techniques to study the use of emotion and reason in political
+    discourse. Our new measure of emotionality in language combines lists of emotive and cognitive words,
+    as well as word embeddings, to construct a text-based scale between emotion and reason. After validating
+    the method against human annotations, we apply it to scale 6 million speeches in the U.S. Congressional
+    Record for the years 1858 through 2014. Intuitively, emotionality spikes during times of war and is
+    highest for patriotism-related topics. In the time series, emotionality was relatively low and stable
+    in the earlier years but increased significantly starting in the late 1970s. Comparing Members of
+    Congress to their colleagues, we find that emotionality is higher for Democrats, for women, for ethnic/religious
+    minorities, for members of the opposition party, and for those with relatively extreme policy preferences
+    (either left-wing or right-wing) as measured by roll call votes.
+  summary: 'Builds a text-based scale of emotion versus reason and applies it to 6 million congressional
+    speeches, 1858–2014: emotionality spikes in wartime and is highest for patriotism-related topics.'

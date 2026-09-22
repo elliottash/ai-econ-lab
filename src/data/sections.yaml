@@ -1,0 +1,32 @@
+# Manifest of research sections. Order here = order on the site (top = first).
+# Each entry points at a paper list in sections/<file>; order within a file is
+# the display order (top of file = first). "on_homepage" sections appear on /
+# in addition to /research.
+sections:
+  - file: recent-working-papers.yaml
+    title: Recent Working Papers
+    on_homepage: true
+  - file: selected-economics.yaml
+    title: Selected Publications — Economics
+    on_homepage: true
+  - file: selected-ai-ml-nlp.yaml
+    title: Selected Publications — AI/ML/NLP
+    on_homepage: true
+  - file: selected-political-science.yaml
+    title: Selected Publications — Political Science
+    on_homepage: true
+  - file: selected-law.yaml
+    title: Selected Publications — Law
+    on_homepage: true
+  - file: more-working-papers.yaml
+    title: More Working Papers
+    on_homepage: false
+  - file: journal-articles.yaml
+    title: Peer-Reviewed Journal Articles
+    on_homepage: false
+  - file: conference-proceedings.yaml
+    title: Peer-Reviewed Conference Proceedings
+    on_homepage: false
+  - file: other-publications.yaml
+    title: Other Publications (Not Peer-Reviewed)
+    on_homepage: false

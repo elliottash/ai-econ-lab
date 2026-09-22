@@ -1,0 +1,75 @@
+# Selected Publications — Political Science. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: Gender and reactions to speeches in German parliamentary debates
+  meta: (with Johann Kruemmel and Jonathan B. Slapin), American Journal of Political Science (2024)
+  url: http://doi.org/10.1111/ajps.12867
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/GODCXP
+  abstract: Are non-verbal reactions during parliamentary debate gendered? Do male and female Members
+    of Parliament (MPs) experience applause or jeering differently? In short, yes, and the gendered nature
+    of a speech matters. Using an original corpus of over 544,000 speeches given in German state parliaments,
+    we first estimate the gendered nature of parliamentary speeches, then examine how reactions to speeches
+    given by male and female MPs differ. Female and male MPs receive similarly positive and negative reactions
+    to their speeches on average, but they receive different reactions depending on the gendered nature
+    of the speeches. Speeches using language associated with women’s topics receive fewer reactions overall,
+    and even fewer when delivered by men. The gendered nature of parliamentary interjections could affect
+    how women MPs view their position and how women voters view parliament.
+  summary: 'Analyzes 544,000 speeches in German state parliaments and finds reactions to them are gendered:
+    men and women receive similar amounts of applause and jeering on average, but the pattern depends
+    on the gender and topic of the speech.'
+- title: 'Relatio : Text semantics capture political and economic narratives'
+  meta: (with Germain Gauthier and Philine Widmer), Political Analysis (2023)
+  url: https://arxiv.org/abs/2108.01720
+  links:
+  - text: relatio open-source narrative mining package
+    url: https://github.com/relatio-nlp/relatio
+  abstract: Social scientists have become increasingly interested in how narratives — the stories in fiction,
+    politics, and life — shape beliefs, behavior, and government policies. This paper provides an unsupervised
+    method to quantify latent narrative structures in text documents. Our pipeline identifies coherent
+    entity groups and maps explicit relations between them in the text. We provide an application to the
+    United States Congressional Record to analyze political and economic narratives in recent decades.
+    Our analysis highlights the dynamics, sentiment, polarization, and interconnectedness of narratives
+    in political discourse.
+  summary: An unsupervised pipeline (Relatio) that identifies the actors in a text and the relations between
+    them, quantifying the narratives in millions of documents; applied to economic and political storytelling
+    in Congress.
+- title: Cross-Domain Topic Classification for Political Texts
+  meta: (with Massimo Morelli and Moritz Osnabruegge), Political Analysis (2021)
+  pdf: https://elliottash.com/papers/Osnabruegge-Ash-Morelli-Merged.pdf
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/CHTWUB
+  abstract: We introduce and assess cross-domain topic classification. In this approach, an algorithm
+    learns to classify topics in a labeled source corpus and then extrapolates topics in an unlabeled
+    target corpus from another domain. The advantage over within-domain supervised learning is significant
+    efficiency gains because one can use existing training data. The advantage over unsupervised topic
+    models is that our approach can be more specifically targeted to a research question and that the
+    resulting topics are easier to validate and interpret. We demonstrate the method in the case of labeled
+    party platforms (source corpus) and unlabeled parliamentary speeches (target corpus). Besides the
+    standard within-domain error metrics, we further validate the cross-domain performance by labeling
+    a subset of target-corpus documents. We find that the classifier assigns topics accurately in the
+    parliamentary speeches, although accuracy varies substantially by topic. We also propose a tool for
+    interpreting the topics and diagnosing cross-domain classification. To assess empirical validity,
+    we present two case studies on how electoral rules and parliamentarian gender influence the choice
+    of speech topics.
+  summary: Trains a topic classifier on labeled texts from one domain (party platforms) and applies it
+    to an unlabeled domain (parliamentary speeches), combining the focus of supervised learning with the
+    coverage of unsupervised methods.
+- title: 'Elections and divisiveness: Theory and evidence'
+  meta: (with Massimo Morelli and Richard Van Weelden), Journal of Politics (2017)
+  pdf: https://www.dropbox.com/s/kv9owjkvktxuqui/posturing_online.pdf?raw=1
+  links:
+  - text: Replication Files
+    url: https://doi.org/10.7910/DVN/WT2XZQ
+  abstract: This paper provides a theoretical and empirical analysis of how politicians allocate their
+    time across issues. When voters are uncertain about an incumbent’s preferences, there is a pervasive
+    incentive to “posture” by spending too much time on divisive issues (which are more informative about
+    a politician’s preferences) at the expense of time spent on common-values issues (which provide greater
+    benefit to voters). Higher transparency over the politicians’ choices can exacerbate the distortions.
+    These theoretical results motivate an empirical study of how Members of the U.S. Congress allocate
+    time across issues in their floor speeches. We find that U.S. Senators spend more time on divisive
+    issues when they are up for election, consistent with electorally induced posturing. In addition,
+    we find that U.S. House Members spend more time on divisive issues in response to higher news transparency.
+  summary: Models and measures politicians' incentive to 'posture' on divisive issues at the expense of
+    productive ones; U.S. senators up for election spend more floor time on divisive issues.

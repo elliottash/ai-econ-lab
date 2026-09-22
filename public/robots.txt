@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /kb/
+Sitemap: https://ai-econ-lab.org/sitemap.xml

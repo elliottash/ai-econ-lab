@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import { PEOPLE, personBySlug, GROUP_LABELS } from '../../data/people';
+import { LAB } from '../../data/lab';
+
+export function getStaticPaths() {
+  return PEOPLE.map(p => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const person = personBySlug(slug!);
+if (!person) {
+  throw new Error(`Unknown person slug: ${slug}`);
+}
+
+const statusLabel = GROUP_LABELS[person.group];
+---
+<Base title={person.name} description={`${person.name} — ${person.role}, ${LAB.name}.`}>
+  <section class="page-hero shell person-hero">
+    <div>
+      <p class="eyebrow">{statusLabel}</p>
+      <h1>{person.name}</h1>
+      <p class="lede">{person.role} · {LAB.name}</p>
+      <div class="actions">
+        {person.url && <a class="button primary" href={person.url} target="_blank" rel="noopener">Personal site</a>}
+        {person.scholar && <a class="button secondary" href={person.scholar} target="_blank" rel="noopener">Google Scholar</a>}
+        {person.email && <a class="button secondary" href={`mailto:${person.email}`}>{person.email}</a>}
+        <a class="button secondary" href="/people/">All people</a>
+      </div>
+    </div>
+    {person.photo && (
+      <img
+        class="person-photo"
+        src={person.photo}
+        alt={`Portrait of ${person.name}`}
+        width="208"
+        height="260"
+      />
+    )}
+  </section>
+
+  <section class="section alt">
+    <div class="shell" style="max-width:720px;">
+      {person.bio ? (
+        <p class="section-intro" style="font-size:1.1rem;">{person.bio}</p>
+      ) : (
+        <p class="section-intro">
+          Profile page for {person.name}. Additional bio and selected papers can be
+          added in <code>src/data/people.yaml</code>.
+        </p>
+      )}
+    </div>
+  </section>
+</Base>

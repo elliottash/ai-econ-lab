@@ -1,0 +1,30 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    blurb?: string;
+    source?: string;
+    updated?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+const metaBits = [frontmatter.source && `source: ${frontmatter.source}`, frontmatter.updated && `updated ${frontmatter.updated}`].filter(Boolean);
+---
+<Base title={`KB — ${frontmatter.title}`} noindex description="Private lab knowledge base (password-protected).">
+  <section class="page-hero shell">
+    <p class="eyebrow">Lab KB · Private</p>
+    <h1>{frontmatter.title}</h1>
+    {metaBits.length > 0 && <p class="lede kb-meta">{metaBits.join(' · ')}</p>}
+  </section>
+  <section class="section">
+    <div class="shell">
+      <article class="kb-doc">
+        <slot />
+      </article>
+      <p class="kb-back"><a class="link-quiet" href="/kb/">← All guides</a></p>
+    </div>
+  </section>
+</Base>

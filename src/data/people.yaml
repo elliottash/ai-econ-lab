@@ -1,0 +1,304 @@
+# Lab people. group: director | postdoc | phd | assistant | manager | affiliate | visitor | alumni
+# role is free text shown on cards/pages.
+people:
+  # ---- Leadership ----
+  - slug: elliott-ash
+    name: Elliott Ash
+    role: Professor and Director
+    group: director
+    url: https://elliottash.com/
+    email: ashe@ethz.ch
+    photo: /assets/people/elliott-ash.jpg
+    bio: >-
+      Associate Professor at ETH Zurich and Scientific Lead in the Swiss AI
+      Initiative. Research on AI methods for economics, law, media, and
+      institutions.
+    scholar: https://scholar.google.com/citations?user=o5uDfHMAAAAJ&hl=en
+
+  # ---- Postdoctoral researchers ----
+  - slug: andrea-ciccarone
+    name: Andrea Ciccarone
+    role: Postdoctoral Researcher
+    group: postdoc
+    url: https://andreaciccarone.github.io/
+    photo: /assets/people/andrea-ciccarone.jpg
+
+  - slug: fabian-roeben
+    name: Fabian Roeben
+    role: Postdoctoral Researcher
+    group: postdoc
+    url: https://fabianroeben.com/
+    photo: /assets/people/fabian-roeben.jpg
+
+  # ---- PhD students ----
+  - slug: maurizia-di-buono
+    name: Maurizia Di Buono
+    role: PhD Student
+    group: phd
+    photo: /assets/people/maurizia-di-buono.jpg
+    bio: >-
+      Maurizia Di Buono is a PhD student at the Center for Law & Economics.
+      She holds a Master's in Economics and Econometrics from the University
+      of Bologna and a Bachelor's in Economics from the University of Naples.
+
+  - slug: yu-fan
+    name: Yu Fan
+    role: PhD Student
+    group: phd
+    photo: /assets/people/yu-fan.jpg
+    bio: >-
+      Yu Fan is a Ph.D. student at the chair of Prof. Elliott Ash. He works on
+      applied and legal NLP, agentic AI, and machine learning, with further
+      interests in computational social science and software law.
+
+  - slug: benjamin-kohler
+    name: Benjamin Kohler
+    role: PhD Student
+    group: phd
+    photo: /assets/people/benjamin-kohler.jpg
+    bio: >-
+      Benjamin Kohler is a Ph.D. student at the chair of Prof. Elliott Ash.
+      He holds an M.Sc. in Social Data Science from the University of
+      Copenhagen and a B.Sc. in Economics from the University of Mannheim,
+      and spent two years as a predoctoral research assistant at Mannheim
+      and Copenhagen.
+
+  - slug: jingwei-ni
+    name: Jingwei Ni
+    role: PhD Student
+    group: phd
+    url: https://edisonni-hku.github.io/
+    photo: /assets/people/jingwei-ni.jpg
+    bio: >-
+      Jingwei Ni is a Ph.D. student in the group of Prof. Elliott Ash,
+      co-supervised by Prof. Markus Leippold (UZH) and Prof. Mrinmaya Sachan
+      (ETH Zurich). He studied computer science at the University of Hong
+      Kong and data science and machine learning at University College
+      London. His research covers AI applications — fact-checking, scientific
+      communication, AI for social good — and causal NLP.
+
+  - slug: gianmarco-torchetti
+    name: Gianmarco Torchetti
+    role: PhD Student
+    group: phd
+    photo: /assets/people/gianmarco-torchetti.jpg
+    bio: >-
+      Gianmarco Torchetti is a Ph.D. student at the chair of Prof. Elliott
+      Ash. He holds an M.Sc. in Economics and Econometrics from the University
+      of Bologna and a B.Sc. from the University of Rome Tor Vergata, and
+      worked as a predoctoral research assistant at Harvard Business School.
+      He is interested in combining machine learning and causal inference to
+      answer empirical questions in political economy, development, culture,
+      and innovation.
+
+  - slug: lehan-zhang
+    name: Lehan Zhang
+    role: PhD Student
+    group: phd
+    url: https://www.lehanzhang.com/
+    photo: /assets/people/lehan-zhang.jpg
+    bio: >-
+      Lehan Zhang is a Ph.D. student at the chair of Prof. Elliott Ash. She
+      holds degrees in Data Science and Decisions and in Economics from the
+      University of New South Wales and worked at the UNSW Resilient
+      Democracy Lab. She applies NLP methods and causal inference to
+      political economy, culture and identity, and media.
+
+  - slug: david-zollikofer
+    name: David Zollikofer
+    role: PhD Student
+    group: phd
+    url: https://www.davidrzs.com
+    photo: /assets/people/david-zollikofer.jpg
+    bio: >-
+      David Zollikofer is a Ph.D. student at Elliott Ash's chair at ETH
+      Zurich. He holds a master's degree in computer science with a focus on
+      theoretical computer science and machine learning and is a member of
+      the Swiss Study Foundation. Prior to his doctoral studies he designed
+      algorithms in industry and conducted research in Himabindu
+      Lakkaraju's group at Harvard.
+
+  - slug: andrin-gehrig
+    name: Andrin Gehrig
+    role: PhD Student
+    group: phd
+
+  - slug: yang-tian
+    name: Yang Tian
+    role: PhD Student
+    group: phd
+
+  # ---- Scientific assistants ----
+  - slug: matthew-bonci
+    name: Matthew Bonci
+    role: Scientific Assistant
+    group: assistant
+    photo: /assets/people/matthew-bonci.jpg
+    bio: >-
+      Matthew Bonci is a Scientific Assistant in the research team of Prof.
+      Elliott Ash. He holds a Master's in Data Analytics and Research Methods
+      from the Harris School of Public Policy (University of Chicago) and a
+      B.S. in Mathematics and Economic Analysis from Binghamton University.
+
+  - slug: wei-pin
+    name: Wei Pin
+    role: Scientific Assistant
+    group: assistant
+    photo: /assets/people/wei-pin.jpg
+    bio: >-
+      Wei Pin is a Scientific Assistant in the research team of Prof. Elliott
+      Ash. He holds a Bachelor's in Economics and Finance from the University
+      of Liverpool and Xi'an Jiaotong.
+
+  - slug: pranav-garg
+    name: Pranav Garg
+    role: Scientific Assistant
+    group: assistant
+    photo: /assets/people/pranav-garg.jpg
+    bio: >-
+      Pranav Garg is a Scientific Assistant in the research team of Prof.
+      Elliott Ash. He holds a Bachelor's in Economics with a Minor in
+      Mathematics from the Nanyang Technological University of Singapore.
+
+  - slug: dan-goettlich
+    name: Dan Goettlich
+    role: Scientific Assistant
+    group: assistant
+
+  # ---- Lab manager ----
+  - slug: julia-coll-cardona
+    name: Julia Coll Cardona
+    role: Lab Manager
+    group: manager
+    photo: /assets/people/julia-coll-cardona.jpg
+    bio: >-
+      Julia Coll Cardona is the Administrative Assistant at the Center for Law
+      & Economics, supporting Prof. Elliott Ash, Prof. Stefan Bechtold, and
+      Prof. Alexander Stremitzer. She holds a Master in Corporate
+      Communications, Protocol and Events from the University of Barcelona.
+
+  # ---- Faculty affiliates ----
+  - slug: sergio-galletta
+    name: Sergio Galletta
+    role: Faculty Affiliate, Sapienza University of Rome
+    group: affiliate
+    url: https://sergio-galletta.com/
+    bio: >-
+      Associate Professor of Public Economics at Sapienza University of Rome.
+      Empirical public economics and political economy with machine learning
+      methods; frequent collaborator on AI, media, and democracy projects.
+
+  - slug: david-yanagizawa-drott
+    name: David Yanagizawa-Drott
+    role: Faculty Affiliate, University of Zurich
+    group: affiliate
+    url: https://yanagizawadrott.com/
+    bio: >-
+      Professor of Development and Emerging Markets at the University of
+      Zurich. Co-organizer of the Zurich Workshop in AI + Economics and
+      co-chair of the Project for AI Evidence at J-PAL.
+
+  - slug: joachim-voth
+    name: Hans-Joachim Voth
+    role: Faculty Affiliate, University of Zurich
+    group: affiliate
+    url: https://www.jvoth.com/
+    bio: >-
+      UBS Foundation Professor of Economics at the University of Zurich.
+      Long-run growth, cultural economics, and economic history.
+
+  # ---- Visiting students ----
+  - slug: tim-leffler
+    name: Tim Leffler
+    role: Visiting Student
+    group: visitor
+
+  - slug: fengfei-sun
+    name: Fengfei Sun
+    role: Visiting Student
+    group: visitor
+
+  # ---- Former group members / mentees ----
+  - slug: afra-amini
+    name: Afra Amini
+    role: Former group member
+    group: alumni
+    url: https://afraamini.github.io/
+    photo: /assets/people/afra-amini.jpg
+
+  - slug: benjamin-arold
+    name: Benjamin Arold
+    role: Former group member
+    group: alumni
+    url: https://www.benjamin-arold.com/
+    photo: /assets/people/benjamin-arold.jpg
+
+  - slug: germain-gauthier
+    name: Germain Gauthier
+    role: Former group member
+    group: alumni
+    url: https://pinchofdata.github.io/germaingauthier/
+    photo: /assets/people/germain-gauthier.jpg
+
+  - slug: gloria-gennaro
+    name: Gloria Gennaro
+    role: Former group member
+    group: alumni
+    url: http://gloriagennaro.rbind.io/
+    photo: /assets/people/gloria-gennaro.jpg
+
+  - slug: christoph-goessmann
+    name: Christoph Goessmann
+    role: Former group member
+    group: alumni
+    url: https://goessmann.io/
+    photo: /assets/people/christoph-goessmann.jpg
+
+  - slug: malka-guillot
+    name: Malka Guillot
+    role: Former group member
+    group: alumni
+    url: https://malkaguillot.github.io/
+    photo: /assets/people/malka-guillot.jpg
+
+  - slug: aniket-kesari
+    name: Aniket Kesari
+    role: Former group member
+    group: alumni
+    url: https://www.aniketkesari.com/
+    photo: /assets/people/aniket-kesari.jpg
+
+  - slug: claudia-marangon
+    name: Claudia Marangon
+    role: Former group member
+    group: alumni
+    url: https://claudiamarangon.github.io/
+    photo: /assets/people/claudia-marangon.jpg
+
+  - slug: arianna-ornaghi
+    name: Arianna Ornaghi
+    role: Former group member
+    group: alumni
+    url: https://www.ariannaornaghi.com/
+    photo: /assets/people/arianna-ornaghi.jpg
+
+  - slug: lena-song
+    name: Lena Song
+    role: Former group member
+    group: alumni
+    url: https://www.songlena.com/
+    photo: /assets/people/lena-song.jpg
+
+  - slug: dominik-stammbach
+    name: Dominik Stammbach
+    role: Former group member
+    group: alumni
+    url: https://dominik-stammbach.github.io/
+    photo: /assets/people/dominik-stammbach.jpg
+
+  - slug: philine-widmer
+    name: Philine Widmer
+    role: Former group member
+    group: alumni
+    url: https://philinew.github.io/
+    photo: /assets/people/philine-widmer.jpg

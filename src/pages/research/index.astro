@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import PaperEntry from '../../components/PaperEntry.astro';
+import { SECTIONS } from '../../data/papers';
+import { LAB } from '../../data/lab';
+
+let counter = 0;
+const nextIndex = () => ++counter;
+const anchors = SECTIONS.map((s, i) => ({
+  id: `section-${i}`,
+  title: s.title,
+  count: s.papers.length,
+}));
+---
+<Base title="Research" description={`Publications and working papers from the ${LAB.name}.`}>
+  <section class="page-hero shell">
+    <p class="eyebrow">{LAB.name}</p>
+    <h1>Research</h1>
+    <p class="lede">
+      All publications and working papers, numbered continuously. Paper PDFs are
+      hosted on <a href="https://elliottash.com/research/">elliottash.com</a> where noted.
+    </p>
+  </section>
+
+  <section class="section alt">
+    <div class="shell">
+      <nav class="theme-grid" style="margin-bottom:2rem;" aria-label="Research sections">
+        {anchors.map(a => (
+          <a class="theme-card" href={`#${a.id}`} style="text-decoration:none;">
+            <h3 style="font-size:1.15rem;">{a.title}</h3>
+            <p>{a.count} papers</p>
+          </a>
+        ))}
+      </nav>
+
+      {SECTIONS.map((section, i) => (
+        <section id={`section-${i}`} style="margin-bottom:3rem;">
+          <p class="section-label">{section.title}</p>
+          {section.papers.map(paper => (
+            <PaperEntry paper={paper} index={nextIndex()} />
+          ))}
+        </section>
+      ))}
+    </div>
+  </section>
+</Base>

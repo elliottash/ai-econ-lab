@@ -1,0 +1,130 @@
+# More Working Papers. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: Visual representation and stereotypes in news media
+  meta: (with Ruben Durante, Maria Grebenshchikova, and Carlo Schwarz), Reject & Resubmit at Economic
+    Journal
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3934858
+  abstract: We propose a new method for measuring gender and ethnic stereotypes in news reports. By combining
+    computer vision and natural language processing tools, the method allows us to analyze both images
+    and text and, crucially, the interaction between the two. We apply this approach to over 2 million
+    web articles published in the New York Times and Fox News between 2000 and 2020. We find that in both
+    outlets, men and whites are generally over-represented relative to their population share, while women
+    and Hispanics are under-represented. News content perpetuates common stereotypes such as associating
+    women with narratives about caring roles and family; Blacks and Hispanics with low-skill jobs, crime,
+    and poverty; and Asians with high-skill jobs and science. There are some significant differences across
+    outlets, with Fox’s content displaying a stronger association of Hispanics with immigration than the
+    New York Times. Finally, we find that group representation in the news is influenced by the gender
+    and ethnic identity of authors and editors. This suggests that it results, at least in part, from
+    the choices of news makers, and could change in response to increased diversity in newsroom staff.
+  summary: Combines computer vision with text analysis to measure gender and ethnic stereotypes in 2 million
+    New York Times and Fox News articles — in the images, the words, and the interaction between them.
+- title: Race-related Research in Economics
+  meta: (with Arun Advani, Anton Boltachka, David Cai, and Imran Rasul)
+  pdf: https://www.homepages.ucl.ac.uk/~uctpimr/research/Race_Publications.pdf
+  abstract: Issues of racial justice and economic inequalities between racial and ethnic groups have risen
+    to the top of public debate. Economists’ ability to contribute to these debates is based on the body
+    of race-related research. We study the volume and content of race-related research in economics. We
+    base our analysis on a corpus of 225,000 economics publications from 1960 to 2020 to which we apply
+    an algorithmic approach to classify race-related work. We present three new facts. First, since 1960
+    less than 2% of economics publications have been race-related. There is an uptick in such work in
+    the mid 1990s. Among the top-5 journals this is driven by the American Economic Review, Quarterly
+    Journal of Economics and the Journal of Political Economy. Econometrica and the Review of Economic
+    Studies have each cumulatively published fewer than 15 race-related articles since 1960. Second, on
+    content, while over 50% of race-related publications in the 1970s focused on Black individuals, by
+    the 2010s this had fallen to 20%. There has been a steady decline in the share of race-related research
+    on discrimination since the 1980s, with a rise in the share of studies on identity. Finally, we apply
+    our algorithm to NBER and CEPR working papers posted over the last four decades, to study an earlier
+    stage of the research process. We document a balkanization of race-related research into a few fields,
+    and its continued absence from many others — a result that holds even within the subset of research
+    examining issues of inequality or diversity. We discuss implications of our findings for economists’
+    ability to contribute to debates on race and ethnicity in the economy.
+  summary: Classifies 225,000 economics publications from 1960–2020 and documents that under 2 percent
+    are race-related, with patterns in when, where, and by whom that research is done.
+- title: 'Judging Disparities: Recidivism Risk, Image Motives, and In-Group Bias on Wisconsin Criminal
+    Courts'
+  meta: (with Claudia Marangon)
+  pdf: https://elliottash.com/papers/Ash-Marangon-Judging-Disparities.pdf
+  abstract: 'This paper studies racial in-group disparities in Wisconsin, which has one of the highest
+    Black-to-White incarceration rates among all U.S. states. The analysis is motivated by a model in
+    which a judge may want to incarcerate more due to three factors: (1) taste-based preferences about
+    the defendant’s group identity; (2) higher recidivism risk where the defendant is more likely to commit
+    future crimes; and (3) image motives stemming from the defendant being in the same group as the judge.
+    Further, a judge may have better information on recidivism risk due to two factors: (4) becoming more
+    experienced, and (5) sharing the same group as the defendant. We take these ideas to new data on 1
+    million cases from Wisconsin criminal courts, 2005-2017. Looking at racial disparities between majority
+    (White) and minority (Black) judges and defendants, we find no evidence for anti-out-group bias (1).
+    Using a recidivism risk score that we construct using machine learning tools to predict reoffense,
+    we find evidence that judges do tend to incarcerate defendants with a higher recidivism risk (2).
+    Consistent with judge experience leading to better information on defendant recidivism risk (4), we
+    find that more experienced judges are more responsive in jailing defendants with a high recidivism
+    risk score. Consistent with image motives (3), we find that when the minority group is responsible
+    for most crimes, minority-group judges are harsher on their in-group. Finally, consistent with judges
+    having better information on recidivism risk for same-group defendants (5), we find that judges are
+    more responsive to the recidivism risk score for defendants from the same group when that group makes
+    up a relatively small share of defendants.'
+  summary: A model of sentencing in which judges differ in prejudice, perceived recidivism risk, and image
+    motives, taken to Wisconsin criminal courts — the state with one of the highest Black-to-White incarceration
+    rates.
+- title: Bootstrapping Science? The Impact of a `Return Human Capital’ Programme on Chinese Research Productivity
+  meta: (with David Cai, Mirko Draca, and Shaoyu Liu)
+  pdf: https://conference.nber.org/conf_papers/f168204.pdf
+  abstract: 'We study the impact of a large-scale scientist recruitment program — China’s Junior Thousand
+    Talents Plan (青年千人计划) — on the productivity of recruited scholars and their local peers in Chinese
+    host universities. Using a comprehensive dataset of published scientific articles, we estimate effects
+    on quantity and quality in a matched difference-in-differences framework. We observe neutral direct
+    productivity effects for participants over a 6-year post-period: an initial drop is followed by a
+    fully offsetting recovery. However, the program participants collaborate at higher rates with more
+    junior China-based co-authors at their host institutions. Looking to peers in the hosting department,
+    we observe positive and rising productivity impacts for peer scholars, equivalent to approximately
+    0.6 of a publication per peer scholar in the long run. Heterogeneity analysis and the absence of correlated
+    resource effects point to the peer effect being rooted in a knowledge spillover mechanism.'
+  summary: China's Junior Thousand Talents recruitment program left recruits' own productivity unchanged
+    over six years (an initial drop, then recovery) but changed the productivity of the local peers around
+    them.
+- title: 'Economic Interests, Worldviews, and Identities: Theory and Evidence on Ideational Politics'
+  meta: (with Sharun Mukand and Dani Rodrik)
+  url: https://www.nber.org/papers/w29474
+  abstract: We distinguish between ideational and interest-based appeals to voters on the supply side
+    of politics, integrating the Keynes-Hayek perspective on the importance of ideas with the Stigler-Becker
+    approach emphasizing vested interests. In our model, political entrepreneurs discover identity and
+    worldview “memes” (narratives, cues, frames) that invoke voters’ identity concerns or shift their
+    views of how the world works. We identify a complementarity between worldview politics and identity
+    politics and illustrate how they may reinforce each other. Furthermore, we show how adverse economic
+    shocks (increasing inequality) lead to a greater incidence of ideational politics. We use these results
+    to analyze data on 60,000 televised political ads in U.S. localities over the years 2000 through 2018.
+    Our empirical work quantifies ideational politics and provides support for key model implications,
+    including the impact of higher inequality on the supply of both identity and worldview politics.
+  summary: A model of politics where entrepreneurs compete by selling worldviews and identities, not just
+    material policies, and where worldview politics and identity politics reinforce each other.
+- title: Fight or Flight on Fox? Partisan Fear Responses on U.S. Cable News Shows
+  meta: (with Cantay Caliskan)
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4204973
+  abstract: 'Empirical work on political communication has so far left out a potentially pivotal dimension
+    – the unspoken emotional responses indicated by facial expressions. This paper shows how to measure
+    these responses using deep-learning-based computer-vision algorithms in the context of U.S. cable
+    news video. Using machine-generated metrics for expressed emotion, combined with mentions of politically
+    divisive entities, we estimate the difference in emotion when cable-channel speakers hear mentions
+    of entities that are from the opposing side of the political divide. We find that the most responsive
+    emotion is fear: When Fox News personalities hear about Democratic entities, or when MSNBC personalities
+    hear about Republican entities, the dominant expressed emotion in their faces is fear, which increases
+    by at least 30% relative to mentions of neutral political entities or those from one’s own partisan
+    team. We find some evidence that this partisan fear response is stronger on Fox News than on MSNBC.'
+  summary: Applies deep-learning facial analysis to cable-news video to measure speakers' expressed emotion
+    when politically divisive groups are mentioned, opening the non-verbal channel of political communication
+    to measurement.
+- title: What Drives Partisan Tax Policy? The Effective Tax Code
+  pdf: https://www.dropbox.com/s/asmfol3omn0dxfp/tax-laws-draft-current.pdf?raw=1
+  abstract: 'This paper contributes to recent work in political economy and public finance that focuses
+    on how details of the tax code, rather than tax rates, are used to implement redistributive fiscal
+    policies. I use tools from natural language processing to construct a high-dimensional representation
+    of tax code changes from the text of 1.6 million statutes enacted by state legislatures for the years
+    1963 through 2010. A data-driven approach is taken to recover the effective tax code – the language
+    in tax law that has the largest impact on revenues, holding major tax rates constant. I then show
+    that the effective tax code drives partisan tax policy: relative to Republicans, Democrats use revenue-increasing
+    language for income taxes but use revenue-decreasing language for sales taxes (consistent with a more
+    redistributive fiscal policy) despite making no changes on average to statutory tax rates. These results
+    are consistent with the view that due to their relative salience, changing tax rates is politically
+    more difficult than changing the tax code.'
+  summary: Uses text analysis of 1.6 million state statutes, 1963–2010, to recover the 'effective tax
+    code' — the statutory language that actually moves revenues — and studies which parties expand it.
+

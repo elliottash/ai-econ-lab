@@ -1,0 +1,134 @@
+# Selected Publications — Law. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: AI Alignment and Legal Reasoning
+  meta: (2026)
+  url: https://www.inlibra.com/de/document/view/pdf/uuid/bf55dc4b-1011-3b31-a5df-0426364c569e
+  abstract: This chapter explores the links between legal reasoning and the post-training regimes of aligned
+    large language models (LLMs). Reinforcement learning from human feedback (RLHF), which optimizes model
+    outputs to match graded human preference rankings, leads to LLMs that perform value-weighted interpolations
+    across task-response pairs. Reinforcement learning with verifiable rewards (RLVR), which rewards outputs
+    that pass objective external checks, produces LLMs that faithfully follow structured reasoning paths.
+    The RLHF approach parallels the analogical, precedent-based reasoning characteristic of common-law
+    systems, while RLVR mirrors the deterministic code-based reasoning associated with civil law. These
+    analogies inform the design of multi-agent legal AI systems, which should deploy RLVR-based LLMs for
+    compliance with bright-line rules, while deploying RLHF-based systems to apply more subtle standards.
+  summary: 'Argues that the two main ways of aligning AI models mirror legal traditions: learning from
+    graded human preferences resembles common-law reasoning from precedent, while learning from rule-based
+    checks resembles civil-law code-following.'
+- title: 'Automating Abercrombie: Machine-Learning Trademark Distinctiveness'
+  meta: (with Shivam Adarsh, Stefan Bechtold, Barton Beebe and Jeanne Fromer), Journal of Empirical Legal
+    Studies (forthcoming)
+  pdf: https://elliottash.com/papers/Automating-Abercrombie.pdf
+  links:
+  - text: Code
+    url: https://github.com/elliottash/AutomatingAbercrombie
+  abstract: Trademark law protects marks in order to enable firms to signal their products’ qualities
+    to consumers. To qualify for protection, a mark must be able to identify and distinguish goods. U.S.
+    courts typically locate a mark on a “spectrum of distinctiveness” – known as the Abercrombie spectrum
+    – that categorizes marks as fanciful, arbitrary, or suggestive, and thus as “inherently distinctive,”
+    or as descriptive or generic, and thus as not inherently distinctive. This paper explores whether
+    locating trademarks on the Abercrombie spectrum can be automated using current natural-language processing
+    techniques. Using about 1.5 million U.S. trademark registrations between 2012 and 2019 as well as
+    2.2 million related USPTO office actions, the paper presents a machine-learning model that learns
+    semantic features of trademark applications and predicts whether or not a mark is inherently distinctive.
+    Our model can predict trademark actions with 86% accuracy overall, and it can identify subsets of
+    trademark applications where it is highly certain in its predictions of distinctiveness. We further
+    analyze which features in trademark applications drive our model’s predictions. We then explore the
+    practical and normative implications of our approach. On a practical level, we outline a decision-support
+    system that could, as a “robot trademark clerk,” assist trademark experts in their determination of
+    a trademark’s distinctiveness. Such a system could also help trademark experts understand which features
+    of a trademark application contribute the most towards a trademark’s distinctiveness. On a theoretical
+    level, we discuss the normative limits of the Abercrombie spectrum and propose to move beyond Abercrombie
+    for trademarks whose distinctiveness is uncertain. We discuss how machine-learning projects in the
+    law not only inform us about the aspects of the legal system that may be automated in the future,
+    but also force us to tackle normative tradeoffs that may be invisible otherwise.
+  summary: Tests whether machine learning can place trademarks on the legal 'spectrum of distinctiveness'
+    (fanciful to generic) the way courts do, automating a central judgment of trademark law.
+- title: 'Scaling Laws: Legal and Social Complexity in U.S. Localities'
+  meta: (with Christoph Goessmann and Suresh Naidu), Philosophical Transactions of the Royal Society A
+    (2024)
+  url: https://royalsocietypublishing.org/doi/10.1098/rsta.2023.0151
+  links:
+  - text: Online Appendix
+    url: https://doi.org/10.6084/m9.figshare.c.7031280
+  abstract: Law sets out the rules for society and the economy, particularly important for interactions
+    between strangers. Legal code is a form of non-rival infrastructure, a public good important for investment
+    and innovation. This paper investigates whether legal code complexity scales with population size
+    in US localities. We analyse a corpus of municipal codes from 3259 cities and measure legal complexity
+    using various metrics, including number of words, bytes, and compressed bytes. We find that legal
+    complexity scales geometrically with jurisdiction population, with a scaling parameter of approximately
+    0.2 and an 𝑅2R2 of approximately 0.2. The estimated scaling parameter is similar to gross domestic
+    product per capita , consistent with an interpretation of legal codes as regulating social interactions
+    per capita in cities.
+  summary: Analyzes the municipal codes of 3,259 U.S. cities and finds legal complexity grows geometrically
+    with population — big cities are disproportionately more codified than small ones.
+- title: 'Translating Legalese: Enhancing Public Understanding of Court Opinions with Legal Summarizers'
+  meta: (with Aniket Kesari, Suresh Naidu, Lena Song, and Dominik Stammbach), ACM Symposium on Computer
+    Science and Law (2024)
+  url: https://doi.org/10.1145/3614407.3643700
+  abstract: Judicial opinions are written to be persuasive and could build public trust in court decisions,
+    yet they can be difficult for non-experts to understand. We present a pipeline for using an AI assistant
+    to generate simplified summaries of judicial opinions. Compared to existing expert-written summaries,
+    these AI-generated simple summaries are more accessible to the public and more easily understood by
+    non-experts. We show in a survey experiment that the AI summaries help respondents understand the
+    key features of a ruling, and have higher perceived quality, especially for respondents with less
+    formal education.
+  summary: An AI pipeline that generates simplified summaries of judicial opinions; in a survey experiment,
+    readers understood the key features of rulings better from the AI summaries than from traditional
+    expert-written ones.
+- title: If We Build It, Will They Legislate? Empirically Testing the Potential of the Nondelegation Doctrine
+    to Curb Congressional ‘Abdication’
+  meta: (with Daniel Walters), Cornell Law Review (2023)
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4045079
+  abstract: 'A widely held view for why the Supreme Court would be right to revive the nondelegation doctrine
+    is that Congress has perverse incentives to abdicate its legislative role and evade accountability
+    through the use of delegations, either expressly delineated or implied through statutory imprecision,
+    and that enforcement of the nondelegation doctrine would correct for those incentives. We call this
+    the Field of Dreams Theory—if we build the nondelegation doctrine, Congress will legislate. Unlike
+    originalist arguments for the revival of the nondelegation doctrine, this theory has widespread appeal
+    and is instrumental to the Court’s project of gaining popular acceptance of a greater judicial role
+    in policing congressional decisions regarding delegation. But is it true? In this article, we comprehensively
+    test the theory at the state level, using two original datasets: one comprising all laws passed by
+    state legislatures and the other comprising all nondelegation decisions in the state Supreme Courts.
+    Using a variety of measures and methods, and in contrast with the one existing study on the subject,
+    we do observe at least some statistically measurable decrease in delegation, if only by certain measures.
+    However, when put in context, these findings are underwhelming compared to the predictions of the
+    Field of Dreams Theory. For instance, we observe that, even where it exists, this effect is substantively
+    small and on par with a number of other factors that influence delegation—our best estimate is that
+    nondelegation cases explain about 1.5 percent of the variation in delegation. Moreover, we also find
+    some evidence that is directly contrary to the Field of Dreams Theory—that is, we find evidence that
+    enforcement of the nondelegation doctrine actually leads to more implied delegation in the form of
+    vague and precatory statutory language. These findings have direct relevance to contemporary debate
+    and cases entertaining a revitalization of the nondelegation doctrine in the federal courts. First,
+    the findings that enforcement of the doctrine can prospectively decrease legislative delegation suggest
+    that there may be something to the Field of Dreams Theory, although that in turn raises the stakes
+    of debates over whether less delegation would actually be good for public welfare. Second, even though
+    there is an effect, the weakness of that effect, both in an absolute sense and relative to other factors,
+    undermines the overblown claims that the nondelegation doctrine could fundamentally transform how
+    government works. And finally, our finding that judicial decisions enforcing the nondelegation doctrine
+    can sometimes lead to more implied delegation through imprecise statutory language suggests that there
+    may be unintended consequences from giving the nondelegation doctrine a new lease on life.'
+  summary: Tests the 'Field of Dreams' case for reviving the nondelegation doctrine — that Congress abdicates
+    because it can, and would legislate more if courts forced it to — against the empirical record.
+- title: 'New Policing, New Segregation: From Ferguson to New York'
+  meta: (with Jeffrey A. Fagan), Georgetown Law Journal Online (2017)
+  pdf: https://www.law.georgetown.edu/georgetown-law-journal/wp-content/uploads/sites/26/2019/10/fagan-new-policing-new-segregation_ACCESSIBLE.pdf
+  abstract: Modern policing emphasizes advanced statistical metrics, new forms of organizational accountability,
+    and aggressive tactical enforcement of minor crimes as the core of its institutional design. Recent
+    policing research has shown how this policing regime has been woven into the social, political and
+    legal systems in urban areas, but there has been little attention to these policing regimes in smaller
+    areas. In these places, where relationships between citizens, courts and police are more intimate
+    and granular, and local boundaries are closely spaced with considerable flow of persons through spaces,
+    the “new policing” has reached deeply into the everyday lives of predominantly non-white citizens
+    through multiple contacts that lead to an array of legal financial obligations including a wide array
+    of fines and fees. Failure to pay these fees often leads to criminal liability. We examine two faces
+    of modern policing, comparing the Ferguson, Missouri and New York City. We analyze rich and detailed
+    panel data from both places on police stops, citations, warrants, arrests, court dispositions, and
+    penalties, to show the web of social control and legal burdens that these practices create. The data
+    paint a detailed picture of racially discriminatory outcomes at all stages of the process that are
+    common to these two very different social contexts. We link the evidence on the spatial concentration
+    of the racial skew in these policing regimes to patterns of social and spatial segregation, and in
+    turn, to the social, economic and health implications for mobility. We conclude with a discussion
+    of the implications of the “new policing” for constitutional regulation and political reform.
+  summary: Traces how data-driven, aggressive minor-crime enforcement regimes took hold not only in big
+    cities but in small American municipalities, with consequences for segregation and inequality there.

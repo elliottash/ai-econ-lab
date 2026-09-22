@@ -1,0 +1,140 @@
+---
+import Base from '../../layouts/Base.astro';
+import { GRANTS, OTHER_FUNDING } from '../../data/grants';
+
+const featured = GRANTS.find(g => g.featured);
+const rest = GRANTS.filter(g => g !== featured);
+---
+
+<Base
+  title="Grants"
+  description="Grants supporting the lab's research on AI, law, and economics — including the ERC Starting Grant TAILSS (Tools from AI for Law and Social Science), funded by SERI."
+>
+  <section class="page-hero shell">
+    <p class="eyebrow">Funding</p>
+    <h1>Grants</h1>
+    <p class="lede">
+      Selected grants supporting the lab's research on AI, law, and economics —
+      present and past.
+    </p>
+  </section>
+
+  {featured && (
+    <section class="section" aria-labelledby="featured-grant-title">
+      <div class="shell">
+        <article class="feature">
+          <div class="feature-main">
+            <p class="feature-kicker">
+              ERC Starting Grant · funded by SERI · {featured.period}
+            </p>
+            <h3 id="featured-grant-title">
+              TAILSS — {featured.title}
+            </h3>
+            <p class="feature-meta">
+              {featured.role} Elliott Ash · {featured.host}
+            </p>
+            <p class="feature-summary">{featured.summary}</p>
+            <div class="feature-links">
+              {(featured.links ?? []).map(l => (
+                <a href={l.url} target="_blank" rel="noopener">{l.text} ↗</a>
+              ))}
+            </div>
+          </div>
+          <div class="feature-stats">
+            <div class="stat">
+              <span class="stat-value">CHF 1.66m</span>
+              <span class="stat-label">
+                direct funding from SERI — ERC Starting Grant 2021, panel SH2
+              </span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">2022</span>
+              <span class="stat-label">grant start at ETH Zurich</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  )}
+
+  {rest.length > 0 && (
+    <section class="section alt" aria-labelledby="other-grants-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Awarded</p>
+            <h2 id="other-grants-title">New and ongoing</h2>
+          </div>
+          <p class="section-intro">
+            Grants starting or underway beyond TAILSS.
+          </p>
+        </div>
+        <div class="theme-list">
+          {rest.map((g, i) => (
+            <div class="theme-item">
+              <span class="theme-index">{String(i + 2).padStart(2, '0')}</span>
+              <div>
+                <h3>{g.title}</h3>
+                <p>{g.summary}</p>
+                <p class="grant-meta">
+                  {g.scheme} · {g.amount} · {g.period} · {g.role} · {g.partners}
+                </p>
+                {(g.links ?? []).map(l => (
+                  <p class="grant-meta">
+                    <a href={l.url} target="_blank" rel="noopener">{l.text} ↗</a>
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section" aria-labelledby="other-funding-title">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Support</p>
+          <h2 id="other-funding-title">Other funding</h2>
+        </div>
+        <p class="section-intro">
+          The lab's work has also been supported by these funders and programs.
+        </p>
+      </div>
+      <ul class="funding-list">
+        {OTHER_FUNDING.map(f => <li>{f}</li>)}
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .grant-meta {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0.5rem 0 0;
+  }
+  .grant-meta a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .funding-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .funding-list li {
+    border-top: 1px solid var(--line);
+    padding: 0.65rem 0;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+  }
+  .funding-list li:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+</style>

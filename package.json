@@ -1,0 +1,21 @@
+{
+  "name": "ai-econ-lab",
+  "version": "1.0.0",
+  "description": "AI and Economics Lab \u2014 ai-econ-lab.org (Astro static build, YAML content)",
+  "type": "module",
+  "scripts": {
+    "audit:content": "python3 scripts/audit_content.py",
+    "test": "python3 -m unittest discover -s tests -v",
+    "dev": "astro dev",
+    "build": "npm run audit:content && astro build && python3 scripts/postbuild.py",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "astro": "^7.0.2",
+    "tailwindcss": "^4.1.0",
+    "yaml": "^2.8.0"
+  }
+}

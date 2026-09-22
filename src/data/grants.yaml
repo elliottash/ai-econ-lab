@@ -1,0 +1,54 @@
+# Grants and funding. featured: true renders as the large lead item on /grants/.
+grants:
+  - acronym: TAILSS
+    title: Tools from AI for Law and Social Science
+    scheme: ERC Starting Grant, funded by SERI
+    amount: CHF 1.66 million
+    period: since 2022
+    role: Principal Investigator
+    host: ETH Zurich
+    featured: true
+    summary: >-
+      The lab's founding grant. TAILSS develops artificial-intelligence tools
+      for research on law and social science: new measurements of fairness and
+      bias in judicial decision-making, natural-language methods for legal and
+      political texts, and transparent machine systems that can help detect and
+      mitigate bias where human decision-makers are subject to political
+      pressure or prejudice. Awarded in the ERC Starting Grant 2021 call (panel
+      SH2); because Switzerland was not associated to Horizon Europe at the
+      time, the grant is funded directly by the State Secretariat for
+      Education, Research and Innovation (SERI).
+    links:
+      - text: Center for Law & Economics announcement
+        url: https://lawecon.ethz.ch/news-and-events/news-channel/2022/01/prof-elliott-ash-wins-an-erc-grant.html
+      - text: SERI-funded ERC grants list (PDF)
+        url: https://archive.sefri.ch/dam/sbfi/en/dokumente/2022/05/erc-grants.pdf.download.pdf/seri-funded-erc-grants.pdf
+      - text: ERC 2021 Starting Grant results (PDF)
+        url: https://erc.europa.eu/sites/default/files/document/file/erc_2021_stg_results_all_domains.pdf
+  - title: Responsible AI for the Swiss Judiciary
+    scheme: Swiss National Science Foundation
+    amount: CHF 3.4 million
+    period: from May 2026
+    role: Principal Investigator
+    partners: ETH Zurich, University of Basel, EPFL
+    summary: >-
+      How can AI tools for courts be designed to improve judicial
+      decision-making without endangering institutional trust? The project
+      connects legal science, computer science, and behavioural economics: it
+      develops concrete prototypes, tests them in field experiments with
+      courts, and evaluates the impact on the quality and consistency of
+      rulings. With Stefan Bechtold, Alexander Stremitzer, Cordula Lötscher
+      (Basel), Christoph Engel, and Antoine Bosselut (EPFL); scientific
+      coordinator Jakob Merane.
+    links:
+      - text: Project site
+        url: https://ki-justiz.ch/en/
+
+other_funding:
+  - European Research Council
+  - Swiss National Science Foundation
+  - Swiss Data Science Center
+  - U.S. National Science Foundation
+  - The Alan Turing Institute
+  - Washington Center for Equitable Growth
+  - Swiss AI Initiative — Scientific Lead, Human-AI Alignment horizontal

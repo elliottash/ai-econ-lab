@@ -1,0 +1,140 @@
+# Recent Working Papers. Order in this file = display order (top = first).
+# Fields: title, meta, url, pdf, links, press, abstract, summary.
+- title: 'Courts of Tomorrow: Evidence from a Nationwide Rollout of Generative AI'
+  meta: (with Sultan Mehmood and Christoph Goessmann)
+  pdf: https://elliottash.com/papers/Mehmood-Goessmann-Ash-Courts-of-Tomorrow-Evidence-Nationwide-Rollout-Generative-AI.pdf
+  press:
+  - text: IEEE Spectrum
+    url: https://spectrum.ieee.org/judgegpt-experiment
+  - text: Dawn
+    url: https://www.dawn.com/news/2016213
+  - text: UN Special Rapporteur report
+    url: https://docs.un.org/en/A/80/169
+  abstract: 'We present the first large-scale field experiment evaluating the integration of generative
+    AI into a national justice system. In partnership with Pakistan’s judiciary, we built JudgeGPT, a
+    custom generative AI assistant designed for Pakistan’s trial courts, and randomized 1,559 judges serving
+    across 118 courts into one of three arms: (i) access to the assistant with targeted training tailored
+    to its use; (ii) access to AI with generic training on technology and law; and (iii) generic training
+    without access to AI. Judges who received AI access together with targeted training on the use of
+    the tool were more likely to adopt it, use it more intensively, and continue using it over time. Their
+    attitudes toward AI also shift: they expect the tool and the targeted training to increase their productivity.
+    Administrative records move in the same direction: districts with greater exposure to treated judges
+    resolve more cases. At median-district exposure, introducing AI with targeted training corresponds
+    to 1,848 additional cases resolved per year, a 6.3 percent increase over the mean. This increase does
+    not appear to come at the expense of reduced quality, as measured by case appeals (which slightly
+    decline) or text-based measures of judicial writing (which slightly improve). Chat-log-based usage
+    patterns suggest that judges use AI mainly to clarify legal concepts and support drafting. Targeted
+    training appears to shift use toward tasks where language models are likely to be more useful, such
+    as text improvement, and away from more open-ended legal queries where responses are more costly to
+    verify. Overall, the results suggest that generative AI can raise public-sector productivity, but
+    that these gains may depend on targeted training that directs use toward tasks for which the tool
+    is better suited.'
+  summary: 'A randomized rollout of a custom AI assistant to 1,559 Pakistani trial-court judges: with
+    targeted training, adoption rose and districts resolved about 6 percent more cases per year with no
+    measurable loss of quality.'
+- title: 'The Joe Rogan Effect: Politicized Podcasts and the Youth Gender Voting Gap'
+  meta: (with Sergio Galletta, Federico Masera, and Lehan Zhang)
+  pdf: https://elliottash.com/papers/Ash-Galletta-Masera-Zhang-Joe-Rogan-Effect-Podcasts-Youth-Gender-Voting-Gap.pdf
+  abstract: 'Online creators have become a central source of political information for young adults in
+    recent years, and over the same period, young men have shifted toward the political right relative
+    to young women. We examine whether these two major developments are connected by focusing on “The
+    Joe Rogan Experience”, the leading long-form podcast, which has a disproportionately male audience.
+    Our identification leverages the timing and location of Ultimate Fighting Championship (UFC) events,
+    for which Rogan has long served as the lead commentator. In a difference-in-differences design, we
+    find that local UFC events trigger a significant increase in Google searches and in time spent consuming
+    Joe Rogan episodes among young men. Applying text analysis to podcast transcripts, we document a pronounced
+    shift in Rogan’s political rhetoric: until 2020, Rogan frequently expressed support for Sanders with
+    left-populist rhetoric; starting in 2021, his commentary became supportive of Trump with a right-populist
+    slant. Using administrative voter files, we show that exposure to UFC events until 2020 increased
+    Democratic voting in primaries with Sanders, while after that, exposure to UFC events increased Republican
+    voting in primaries with Trump with all effects concentrated among young men.'
+  summary: Uses UFC events — where Joe Rogan is lead commentator — as a natural experiment in podcast
+    exposure, showing his post-2021 rightward turn shifted young men's primary voting toward Trump.
+- title: 'Read the Paper, Write the Code: Agentic Reproduction of Social-Science Results'
+  meta: (with Benjamin Kohler, David Zollikofer, Johanna Einsiedler, and Alexander Hoyle)
+  pdf: https://elliottash.com/papers/Kohler-Zollikofer-Einsiedler-Hoyle-Ash-Read-Paper-Write-Code-Agentic-Reproduction-Social-Science-Results.pdf
+  abstract: 'Recent work has used LLM agents to reproduce empirical social science results with access
+    to both the data and code. We broaden this scope by asking: Can they reproduce results given only
+    a paper’s methods description and original data? We develop an agentic reproduction system that extracts
+    structured methods descriptions from papers, runs reimplementations under strict information isolation—agents
+    never see the original code, results, or paper—and enables deterministic, cell-level comparison of
+    reproduced outputs to the original results. An error attribution step traces discrepancies through
+    the system chain to identify root causes. Evaluating four agent scaffolds and four LLMs on 48 papers
+    with human-verified reproducibility, we find that agents can largely recover published results, but
+    performance varies substantially between models, scaffolds, and papers. Root cause analysis reveals
+    that failures stem both from agent errors and from underspecification in the papers themselves.'
+  summary: Tests whether AI agents can reproduce published social-science results from a paper's methods
+    description and data alone, without seeing the code, results, or full paper; agents largely succeed,
+    with failures traceable to both agent errors and underspecified papers.
+- title: Worker Rights in Collective Bargaining
+  meta: (with Benjamin Arold, W. Bentley MacLeod, and Suresh Naidu), R&R at Quarterly Journal of Economics
+  pdf: https://elliottash.com/papers/Arold-Ash-MacLeod-Naidu-Value-Worker-Rights-Collective-Bargaining.pdf
+  abstract: Collective bargaining agreements (CBAs) specify the contractual rights of unionized workers,
+    but their full legal content has not yet been analyzed by economists. This paper develops novel natural
+    language methods to analyze the empirical determinants and economic value of these rights using a
+    new collection of 30,000 CBAs from Canada in the period 1986-2015. We parse legally binding rights
+    (e.g., “workers shall receive…”) and obligations (e.g., “the employer shall provide…”) from contract
+    text, and validate our measures through evaluation of clause pairs and comparison to firm surveys
+    on HR practices. Using time-varying province-level variation in labor income tax rates, we find that
+    higher taxes increase the share of worker-rights clauses while reducing pre-tax wages in unionized
+    firms, consistent with a substitution effect away from taxed wages toward untaxed rights. Further,
+    an exogenous increase in the value of outside options (from a leave-one-out instrument for labor demand)
+    increases the share of worker rights clauses in CBAs. Combining the regression estimates, we infer
+    that a one-standard-deviation increase in worker rights is valued at about 5.7% of wages.
+  summary: 'Parses 30,000 Canadian union contracts, 1986–2015, into measurable worker rights and prices
+    them: when wages are taxed more heavily, bargaining shifts toward untaxed rights, worth about 5.7
+    percent of wages per standard deviation.'
+- title: Interviews
+  meta: (with Soumitra Shukla and Jason Sockin)
+  pdf: https://elliottash.com/papers/Ash-Shukla-Sockin-Interviews.pdf
+  abstract: Interviews allow employers to learn about workers, but do they also enable workers to learn
+    about firms? Studying 500,000 interview reports from Glassdoor, we find candidates for high-paying
+    jobs are more likely to reject a job offer if they believe the interview was easy. Easy interviews
+    appear to convey poor “fit” as those who accept offers after easy interviews are two-fifths of a standard
+    deviation less satisfied with their jobs and 10 percent less likely to remain with their employer
+    for at least one year. Analysis of interview narratives using large language models reveals difficult
+    interviews signal colleague ability whereas easy interviews convey a nonselective process. In a small-scale
+    randomized field experiment, an exogenous increase in difficulty elevated perceived difficulty and
+    boosted applicant engagement with the vacancy. Interviews offer workers a preview of match quality,
+    highlighting a channel through which labor markets may become less efficient if firms automate hiring
+    with AI.
+  summary: 'Half a million Glassdoor interview reports show job candidates read interviews as signals
+    of employer quality: easy interviews lead high-paying candidates to reject offers, and those who accept
+    after an easy interview end up worse matched.'
+- title: 'The C-SPAN Effect: Televised Debates and Politician Behavior'
+  meta: (with Gloria Gennaro)
+  pdf: https://elliottash.com/papers/Ash-Gennaro-CSPAN-Effect-Televised-Debates-Politician-Behavior.pdf
+  abstract: We study the effect of televised broadcasts of floor debates on the rhetoric and behavior
+    of U.S. Congress Members. First, we show in a differences-in-differences analysis that the introduction
+    of C-SPAN broadcasts in 1979 increased the use of emotional appeals in the House relative to the Senate,
+    where televised floor debates were not introduced until later. Second, we use exogenous variation
+    in C-SPAN channel positioning as an instrument for C-SPAN viewership by Congressional district and
+    show that House Members from districts with exogenously higher C-SPAN viewership are more emotive
+    in floor debates. Looking to electoral pressures as a mechanism, we find the emotionality effect of
+    C-SPAN is strongest in competitive districts. C-SPAN exposure increases the vote share for incumbent
+    Congress Members and citizens’ approval of their job in Congress, and more so among Members who speak
+    more emotionally. Contra accountability models of transparency, C-SPAN has no effect on measures of
+    legislative effort on behalf of constituents, and if anything it reduces a politician’s constituency
+    orientation. We find that local news coverage — that is, mediated rather than direct transparency
+    — has the opposite effect of C-SPAN, increasing legislative effort but with no effect on emotional
+    rhetoric. These results highlight the importance of audience and mediation in the political impacts
+    of higher transparency.
+  summary: The arrival of C-SPAN television cameras in the House in 1979 made members' floor speeches
+    more emotional, and districts with exogenously higher viewership elected more emotive speakers — transparency
+    changed rhetoric more than legislative effort.
+- title: 'BallotBot: Can AI Strengthen Democracy?'
+  meta: (with Sergio Galletta and Giacomo Opocher), R&R at Economic Journal
+  pdf: https://elliottash.com/papers/Ash-Galletta-Opocher-BallotBot-AI-Strengthen-Democracy.pdf
+  abstract: This study explores the potential for AI-powered chatbots to strengthen democracy by boosting
+    political knowledge and engagement through better access to political information. We develop and
+    evaluate BallotBot, an AI chatbot with access to official voter guide information from the November
+    2024 referendums in California. In a pre-registered three-wave survey experiment in the weeks around
+    election day, participants (California voters) were randomly assigned to use either BallotBot or a
+    traditional digital voter guide to answer questions about ballot initiatives. BallotBot access improved
+    participants’ ability to answer in-depth questions, reduced overconfidence, lowered the perceived
+    cost of acquiring information for less-informed participants, and fostered greater engagement with
+    political information. However, it had no clear effect on self-reported turnout or the direction of
+    voting.
+  summary: 'A pre-registered experiment around California''s 2024 referendums: an AI chatbot with access
+    to official voter guides improved voters'' knowledge and engagement and reduced overconfidence, with
+    no clear effect on turnout or vote direction.'

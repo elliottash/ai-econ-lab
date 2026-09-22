@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import PaperEntry from '../components/PaperEntry.astro';
+import PersonCard from '../components/PersonCard.astro';
+import { LAB } from '../data/lab';
+import { DIRECTOR, POSTDOCS, PHD_STUDENTS } from '../data/people';
+import { HOMEPAGE_SECTIONS } from '../data/papers';
+
+const featuredPeople = [...DIRECTOR, ...POSTDOCS, ...PHD_STUDENTS];
+
+const recent = HOMEPAGE_SECTIONS[0]?.papers ?? [];
+const featured = recent[0];
+const morePapers = recent.slice(1, 6);
+---
+
+<Base>
+  <section class="hero shell" id="top">
+    <h1>AI <span class="amp">&amp;</span> Economics Lab</h1>
+    <p class="eyebrow hero-sub">at {LAB.location}</p>
+    <p class="hero-copy">
+      We build and apply machine learning, large language models, and AI agents
+      to economic questions — measurement, causal inference, institutions,
+      media, and knowledge work.
+    </p>
+    <div class="hero-links">
+      <a class="button primary" href="/research/">Research</a>
+      <a class="link-quiet" href="/people/">People →</a>
+    </div>
+  </section>
+
+  <section class="affil-strip" aria-label="Lab affiliations">
+    <div class="shell affil-row">
+      <span class="affil-label">Affiliations</span>
+      {LAB.affiliations.map(a => <a href={a.url}>{a.text}</a>)}
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="people-title">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Group</p>
+          <h2 id="people-title">People</h2>
+        </div>
+        <p class="section-intro">
+          Director, postdocs, and PhD students.
+          <a href="/people/">Full roster and former members →</a>
+        </p>
+      </div>
+      <div class="people-grid">
+        {featuredPeople.map(p => <PersonCard person={p} />)}
+      </div>
+    </div>
+  </section>
+
+  {featured && (
+    <section class="section alt" aria-labelledby="research-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="research-title">Research</h2>
+          </div>
+          <p class="section-intro">
+            Field experiments, methods, and measurement.
+            <a href="/research/">All research →</a>
+          </p>
+        </div>
+
+        <article class="feature">
+          <div class="feature-main">
+            <p class="feature-kicker">01 · Field experiment · Pakistan's trial courts</p>
+            <h3>
+              <a href={featured.pdf} target="_blank" rel="noopener">{featured.title}</a>
+            </h3>
+            <p class="feature-meta">with Sultan Mehmood and Christoph Goessmann · JudgeGPT</p>
+            <p class="feature-summary">{featured.summary}</p>
+            <div class="feature-links">
+              {featured.pdf && (
+                <a href={featured.pdf} target="_blank" rel="noopener">PDF ↓</a>
+              )}
+              {(featured.press ?? []).map(l => (
+                <a href={l.url} target="_blank" rel="noopener">{l.text} ↗</a>
+              ))}
+            </div>
+          </div>
+          <div class="feature-stats">
+            <div class="stat">
+              <span class="stat-value">1,559</span>
+              <span class="stat-label">judges randomized across 118 courts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">+6.3%</span>
+              <span class="stat-label">cases resolved per year at median-district exposure</span>
+            </div>
+          </div>
+        </article>
+
+        {morePapers.length > 0 && (
+          <div class="recent-block">
+            <p class="section-label">More recent work</p>
+            {morePapers.map((paper, i) => (
+              <PaperEntry paper={paper} index={i + 2} />
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  <section class="section" aria-labelledby="themes-title">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Research agenda</p>
+          <h2 id="themes-title">Themes</h2>
+        </div>
+        <p class="section-intro">Methods and evidence at the intersection of AI systems and economic behavior.</p>
+      </div>
+      <div class="theme-list">
+        {LAB.themes.map((t, i) => (
+          <div class="theme-item">
+            <span class="theme-index">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{t.title}</h3>
+            <p>{t.blurb}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Base>
