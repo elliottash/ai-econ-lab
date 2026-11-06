@@ -22,12 +22,13 @@ python3 -m pip install -r requirements.txt
 npm run dev
 ```
 
-Validate with `npm test`, `npm run build`, and `python3 scripts/check_site.py`.
+Validate with `npm test` and `npm run build`. The build runs the content audit
+(papers and people), builds the site, writes the sitemap, and checks internal links.
 The content audit currently reports one existing missing-abstract warning.
 
 ## Deployment
 
-`./deploy.sh` tests and builds, checks local links, dry-runs the upload, then deploys
+`./deploy.sh` tests and builds, dry-runs the upload, asks for confirmation, then deploys
 to `deploy@138.201.189.28:/opt/ai-econ-lab/site/dist/` and verifies public routes.
 Nginx configuration is in `ops/ai-econ-lab.nginx.conf`; TLS and DNS use Cloudflare.
 

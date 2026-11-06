@@ -4,6 +4,9 @@ import { GRANTS, OTHER_FUNDING } from '../../data/grants';
 
 const featured = GRANTS.find(g => g.featured);
 const rest = GRANTS.filter(g => g !== featured);
+const firstRestIndex = featured ? 2 : 1;
+const joinDefined = (parts: (string | undefined)[]) => parts.filter(Boolean).join(' · ');
+const leadLine = (g: (typeof GRANTS)[number]) => joinDefined([[g.role, g.lead].filter(Boolean).join(' '), g.host]);
 ---
 
 <Base
@@ -24,15 +27,11 @@ const rest = GRANTS.filter(g => g !== featured);
       <div class="shell">
         <article class="feature">
           <div class="feature-main">
-            <p class="feature-kicker">
-              ERC Starting Grant · funded by SERI · {featured.period}
-            </p>
+            <p class="feature-kicker">{joinDefined([featured.scheme, featured.period])}</p>
             <h3 id="featured-grant-title">
-              TAILSS — {featured.title}
+              {featured.acronym ? `${featured.acronym} — ${featured.title}` : featured.title}
             </h3>
-            <p class="feature-meta">
-              {featured.role} Elliott Ash · {featured.host}
-            </p>
+            {leadLine(featured) && <p class="feature-meta">{leadLine(featured)}</p>}
             <p class="feature-summary">{featured.summary}</p>
             <div class="feature-links">
               {(featured.links ?? []).map(l => (
@@ -40,18 +39,16 @@ const rest = GRANTS.filter(g => g !== featured);
               ))}
             </div>
           </div>
-          <div class="feature-stats">
-            <div class="stat">
-              <span class="stat-value">CHF 1.66m</span>
-              <span class="stat-label">
-                direct funding from SERI — ERC Starting Grant 2021, panel SH2
-              </span>
+          {(featured.stats ?? []).length > 0 && (
+            <div class="feature-stats">
+              {(featured.stats ?? []).map(s => (
+                <div class="stat">
+                  <span class="stat-value">{s.value}</span>
+                  <span class="stat-label">{s.label}</span>
+                </div>
+              ))}
             </div>
-            <div class="stat">
-              <span class="stat-value">2022</span>
-              <span class="stat-label">grant start at ETH Zurich</span>
-            </div>
-          </div>
+          )}
         </article>
       </div>
     </section>
@@ -66,18 +63,18 @@ const rest = GRANTS.filter(g => g !== featured);
             <h2 id="other-grants-title">New and ongoing</h2>
           </div>
           <p class="section-intro">
-            Grants starting or underway beyond TAILSS.
+            Grants starting or underway{featured && ` beyond ${featured.acronym ?? featured.title}`}.
           </p>
         </div>
         <div class="theme-list">
           {rest.map((g, i) => (
-            <div class="theme-item">
-              <span class="theme-index">{String(i + 2).padStart(2, '0')}</span>
+            <div class="theme-item grant-item">
+              <span class="theme-index">{String(i + firstRestIndex).padStart(2, '0')}</span>
               <div>
                 <h3>{g.title}</h3>
                 <p>{g.summary}</p>
                 <p class="grant-meta">
-                  {g.scheme} · {g.amount} · {g.period} · {g.role} · {g.partners}
+                  {joinDefined([g.scheme, g.amount, g.period, g.role, g.partners])}
                 </p>
                 {(g.links ?? []).map(l => (
                   <p class="grant-meta">
@@ -111,6 +108,14 @@ const rest = GRANTS.filter(g => g !== featured);
 </Base>
 
 <style>
+  .grant-item { grid-template-columns: 4rem minmax(0, 1fr); }
+  .grant-item > div { max-width: 760px; }
+  @media (max-width: 900px) {
+    .grant-item { grid-template-columns: 3rem minmax(0, 1fr); }
+  }
+  @media (max-width: 650px) {
+    .grant-item { grid-template-columns: 1fr; }
+  }
   .grant-meta {
     font-family: var(--mono);
     font-size: 0.75rem;

@@ -4,13 +4,16 @@ import PaperEntry from '../components/PaperEntry.astro';
 import PersonCard from '../components/PersonCard.astro';
 import { LAB } from '../data/lab';
 import { DIRECTOR, POSTDOCS, PHD_STUDENTS } from '../data/people';
-import { HOMEPAGE_SECTIONS } from '../data/papers';
+import { HOMEPAGE_PAPERS } from '../data/papers';
 
 const featuredPeople = [...DIRECTOR, ...POSTDOCS, ...PHD_STUDENTS];
 
-const recent = HOMEPAGE_SECTIONS[0]?.papers ?? [];
-const featured = recent[0];
-const morePapers = recent.slice(1, 6);
+const featured = HOMEPAGE_PAPERS.find(p => p.feature);
+const morePapers = HOMEPAGE_PAPERS.filter(p => p !== featured).slice(0, 5);
+const firstMoreIndex = featured ? 2 : 1;
+const featuredHref = featured && (featured.url || featured.pdf);
+const featuredStats = featured?.feature?.stats ?? [];
+const featuredMeta = featured?.feature?.meta ?? featured?.meta;
 ---
 
 <Base>
@@ -43,7 +46,7 @@ const morePapers = recent.slice(1, 6);
           <h2 id="people-title">People</h2>
         </div>
         <p class="section-intro">
-          Director, postdocs, and PhD students.
+          Director, postdocs, and PhD students.{' '}
           <a href="/people/">Full roster and former members →</a>
         </p>
       </div>
@@ -53,7 +56,7 @@ const morePapers = recent.slice(1, 6);
     </div>
   </section>
 
-  {featured && (
+  {(featured || morePapers.length > 0) && (
     <section class="section alt" aria-labelledby="research-title">
       <div class="shell">
         <div class="section-head">
@@ -62,45 +65,49 @@ const morePapers = recent.slice(1, 6);
             <h2 id="research-title">Research</h2>
           </div>
           <p class="section-intro">
-            Field experiments, methods, and measurement.
+            Field experiments, methods, and measurement.{' '}
             <a href="/research/">All research →</a>
           </p>
         </div>
 
-        <article class="feature">
-          <div class="feature-main">
-            <p class="feature-kicker">01 · Field experiment · Pakistan's trial courts</p>
-            <h3>
-              <a href={featured.pdf} target="_blank" rel="noopener">{featured.title}</a>
-            </h3>
-            <p class="feature-meta">with Sultan Mehmood and Christoph Goessmann · JudgeGPT</p>
-            <p class="feature-summary">{featured.summary}</p>
-            <div class="feature-links">
-              {featured.pdf && (
-                <a href={featured.pdf} target="_blank" rel="noopener">PDF ↓</a>
-              )}
-              {(featured.press ?? []).map(l => (
-                <a href={l.url} target="_blank" rel="noopener">{l.text} ↗</a>
-              ))}
+        {featured && (
+          <article class="feature">
+            <div class="feature-main">
+              <p class="feature-kicker">01 · {featured.feature?.kicker}</p>
+              <h3>
+                {featuredHref ? (
+                  <a href={featuredHref} target="_blank" rel="noopener">{featured.title}</a>
+                ) : featured.title}
+              </h3>
+              {featuredMeta && <p class="feature-meta">{featuredMeta}</p>}
+              <p class="feature-summary">{featured.summary}</p>
+              <div class="feature-links">
+                {featured.pdf && (
+                  <a href={featured.pdf} target="_blank" rel="noopener">PDF ↓</a>
+                )}
+                {(featured.press ?? []).map(l => (
+                  <a href={l.url} target="_blank" rel="noopener">{l.text} ↗</a>
+                ))}
+              </div>
             </div>
-          </div>
-          <div class="feature-stats">
-            <div class="stat">
-              <span class="stat-value">1,559</span>
-              <span class="stat-label">judges randomized across 118 courts</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">+6.3%</span>
-              <span class="stat-label">cases resolved per year at median-district exposure</span>
-            </div>
-          </div>
-        </article>
+            {featuredStats.length > 0 && (
+              <div class="feature-stats">
+                {featuredStats.map(s => (
+                  <div class="stat">
+                    <span class="stat-value">{s.value}</span>
+                    <span class="stat-label">{s.label}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </article>
+        )}
 
         {morePapers.length > 0 && (
           <div class="recent-block">
             <p class="section-label">More recent work</p>
             {morePapers.map((paper, i) => (
-              <PaperEntry paper={paper} index={i + 2} />
+              <PaperEntry paper={paper} index={i + firstMoreIndex} />
             ))}
           </div>
         )}

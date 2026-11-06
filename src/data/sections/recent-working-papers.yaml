@@ -1,5 +1,6 @@
 # Recent Working Papers. Order in this file = display order (top = first).
-# Fields: title, meta, url, pdf, links, press, abstract, summary.
+# Fields: title, meta, url, pdf, links, press, abstract, summary, feature.
+# feature (optional) makes the paper the homepage highlight: kicker, meta, stats.
 - title: 'Courts of Tomorrow: Evidence from a Nationwide Rollout of Generative AI'
   meta: (with Sultan Mehmood and Christoph Goessmann)
   pdf: https://elliottash.com/papers/Mehmood-Goessmann-Ash-Courts-of-Tomorrow-Evidence-Nationwide-Rollout-Generative-AI.pdf
@@ -32,6 +33,14 @@
   summary: 'A randomized rollout of a custom AI assistant to 1,559 Pakistani trial-court judges: with
     targeted training, adoption rose and districts resolved about 6 percent more cases per year with no
     measurable loss of quality.'
+  feature:
+    kicker: Field experiment · Pakistan's trial courts
+    meta: with Sultan Mehmood and Christoph Goessmann · JudgeGPT
+    stats:
+    - value: 1,559
+      label: judges randomized across 118 courts
+    - value: +6.3%
+      label: cases resolved per year at median-district exposure
 - title: 'The Joe Rogan Effect: Politicized Podcasts and the Youth Gender Voting Gap'
   meta: (with Sergio Galletta, Federico Masera, and Lehan Zhang)
   pdf: https://elliottash.com/papers/Ash-Galletta-Masera-Zhang-Joe-Rogan-Effect-Podcasts-Youth-Gender-Voting-Gap.pdf

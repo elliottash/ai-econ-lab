@@ -1,5 +1,6 @@
 # Lab people. group: director | postdoc | phd | assistant | manager | affiliate | visitor | alumni
 # role is free text shown on cards/pages.
+# Optional links: url (personal site), scholar, github, x — full https:// URLs.
 people:
   # ---- Leadership ----
   - slug: elliott-ash
@@ -110,6 +111,7 @@ people:
     group: phd
     url: https://www.davidrzs.com
     photo: /assets/people/david-zollikofer.jpg
+    github: https://github.com/davidrzs
     bio: >-
       David Zollikofer is a Ph.D. student at Elliott Ash's chair at ETH
       Zurich. He holds a master's degree in computer science with a focus on

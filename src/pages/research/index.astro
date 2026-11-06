@@ -34,8 +34,8 @@ const anchors = SECTIONS.map((s, i) => ({
       </nav>
 
       {SECTIONS.map((section, i) => (
-        <section id={`section-${i}`} style="margin-bottom:3rem;">
-          <p class="section-label">{section.title}</p>
+        <section id={`section-${i}`} aria-labelledby={`section-${i}-title`} style="margin-bottom:3rem;">
+          <h2 class="section-label" id={`section-${i}-title`}>{section.title}</h2>
           {section.papers.map(paper => (
             <PaperEntry paper={paper} index={nextIndex()} />
           ))}

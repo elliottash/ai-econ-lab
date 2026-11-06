@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Audit the YAML research sections for corruption before every build.
+"""Audit the YAML site content for corruption before every build.
 
-Runs over src/data/sections.yaml + sections/*.yaml (via load_sections), so a
-broken YAML file or a bad edit stops the deploy instead of the live site.
+Runs over src/data/sections.yaml + sections/*.yaml (via load_sections) and
+src/data/people.yaml, so a broken YAML file or a bad edit stops the deploy
+instead of the live site.
 """
 from __future__ import annotations
 
@@ -16,14 +17,22 @@ from typing import Iterable
 from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from load_sections import load_sections, manifest_entries, section_files_on_disk, DATA_DIR  # noqa: E402
+import yaml  # noqa: E402
+from load_sections import load_sections, manifest_entries, section_files_on_disk, DATA_DIR, SITE_ROOT  # noqa: E402
 
 
 TERMINAL_PUNCTUATION = frozenset(".?!)]}\"'’”")
 URL_FIELDS = ("pdf", "url")
 LINK_FIELDS = ("links", "press")
-KNOWN_FIELDS = frozenset({"title", "meta", "url", "pdf", "links", "press", "abstract", "summary"})
+KNOWN_FIELDS = frozenset({"title", "meta", "url", "pdf", "links", "press", "abstract", "summary", "feature"})
+FEATURE_FIELDS = frozenset({"kicker", "meta", "stats"})
 SUMMARY_MIN, SUMMARY_MAX = 40, 400
+PUBLIC_DIR = SITE_ROOT / "public"
+# Keep in sync with PersonGroup in src/data/people.ts.
+PERSON_GROUPS = frozenset({"director", "postdoc", "phd", "assistant", "manager", "affiliate", "visitor", "alumni"})
+PERSON_FIELDS = frozenset({"slug", "name", "role", "group", "url", "email", "photo", "bio", "scholar", "github", "x"})
+PERSON_URL_FIELDS = ("url", "scholar", "github", "x")
+SLUG_PATTERN = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
 
 
 @dataclass(frozen=True)
@@ -122,6 +131,10 @@ def audit_papers(papers: list[dict], where: str) -> list[Finding]:
                         "error", "invalid-url", label,
                         f"{field}[{link_index}] has an invalid URL"))
 
+        if "feature" in paper:
+            findings.extend(Finding("error", "invalid-feature", label, problem)
+                            for problem in feature_problems(paper["feature"]))
+
         for field in ("title", "meta", "abstract", "summary"):
             value = str(paper.get(field, ""))
             if re.search(r"&#\d+;|&(?:amp|quot|apos|lt|gt);", value):
@@ -129,6 +142,81 @@ def audit_papers(papers: list[dict], where: str) -> list[Finding]:
                     "warning", "unresolved-html-entity", label,
                     f"{field} contains an unresolved HTML entity"))
 
+    return findings
+
+
+def feature_problems(feature: object) -> list[str]:
+    if not isinstance(feature, dict):
+        return ["feature must be a mapping with kicker, meta, stats"]
+    problems = []
+    unknown = set(feature) - FEATURE_FIELDS
+    if unknown:
+        problems.append(f"unknown feature field(s) {sorted(unknown)}")
+    if not str(feature.get("kicker", "")).strip():
+        problems.append("feature.kicker is empty")
+    stats = feature.get("stats", [])
+    if not isinstance(stats, list) or not all(
+            isinstance(s, dict) and str(s.get("value", "")).strip() and str(s.get("label", "")).strip()
+            for s in stats):
+        problems.append("feature.stats must be a list of {value, label}")
+    return problems
+
+
+def is_absolute_http_url(value: str) -> bool:
+    parsed = urlparse(value)
+    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def load_people(data_dir: Path = DATA_DIR) -> list[dict]:
+    path = data_dir / "people.yaml"
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except yaml.YAMLError as exc:
+        raise ValueError(f"YAML error in {path.name}:\n{exc}") from exc
+    people = data.get("people") if isinstance(data, dict) else None
+    if not isinstance(people, list) or not all(isinstance(p, dict) for p in people):
+        raise ValueError(f"{path.name} must contain a 'people' list of mappings")
+    return people
+
+
+def audit_people(people: list[dict], public_dir: Path = PUBLIC_DIR) -> list[Finding]:
+    findings: list[Finding] = []
+    slugs: Counter[str] = Counter()
+    for index, person in enumerate(people, 1):
+        slug = str(person.get("slug", "")).strip()
+        label = f"{slug or f'record #{index}'} [people.yaml]"
+        slugs[slug] += 1
+
+        unknown = set(person) - PERSON_FIELDS
+        if unknown:
+            findings.append(Finding(
+                "error", "unknown-field", label,
+                f"unknown field(s) {sorted(unknown)} (typo? known: {sorted(PERSON_FIELDS)})"))
+        if not SLUG_PATTERN.fullmatch(slug):
+            findings.append(Finding("error", "invalid-slug", label,
+                                    "slug must be lowercase words joined by hyphens"))
+        for field in ("name", "role"):
+            if not str(person.get(field, "")).strip():
+                findings.append(Finding("error", f"missing-{field}", label, f"{field} is empty"))
+        if person.get("group") not in PERSON_GROUPS:
+            findings.append(Finding(
+                "error", "invalid-group", label,
+                f"group {person.get('group')!r} is not one of {sorted(PERSON_GROUPS)}; "
+                "the person would appear on no list"))
+        for field in PERSON_URL_FIELDS:
+            value = str(person.get(field, "")).strip()
+            if value and not is_absolute_http_url(value):
+                findings.append(Finding("error", "invalid-url", label,
+                                        f"{field} must be a full http(s) URL: {value!r}"))
+        photo = str(person.get("photo", "")).strip()
+        if photo and not (photo.startswith("/") and (public_dir / photo.lstrip("/")).is_file()):
+            findings.append(Finding("error", "missing-photo", label,
+                                    f"photo {photo!r} is not a file under public/"))
+
+    for slug, count in slugs.items():
+        if slug and count > 1:
+            findings.append(Finding("error", "duplicate-slug", f"{slug} [people.yaml]",
+                                    f"slug appears {count} times"))
     return findings
 
 
@@ -215,6 +303,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     try:
         sections = load_sections(args.data_dir)
+        people = load_people(args.data_dir)
     except (OSError, ValueError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
@@ -224,6 +313,7 @@ def main(argv: list[str] | None = None) -> int:
         findings.extend(audit_papers(papers, file_name))
     findings.extend(audit_global(sections))
     findings.extend(audit_manifest(sections, args.data_dir))
+    findings.extend(audit_people(people))
 
     if args.allow_missing_summaries:
         findings = [replace(f, severity="warning") if f.code == "missing-summary" else f
@@ -233,7 +323,8 @@ def main(argv: list[str] | None = None) -> int:
     errors = sum(item.severity == "error" for item in findings)
     warnings = sum(item.severity == "warning" for item in findings)
     total = sum(len(papers) for _, _, papers in sections)
-    print(f"Audited {total} papers across {len(sections)} sections from {args.data_dir}")
+    print(f"Audited {total} papers across {len(sections)} sections and {len(people)} people "
+          f"from {args.data_dir}")
     print_findings(findings)
     counts = Counter(item.code for item in findings)
     if counts:

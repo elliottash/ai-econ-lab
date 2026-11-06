@@ -21,6 +21,8 @@ export interface Person {
   photo?: string;
   bio?: string;
   scholar?: string;
+  github?: string;
+  x?: string;
 }
 
 const loaded = parse(peopleRaw) as { people: Person[] };

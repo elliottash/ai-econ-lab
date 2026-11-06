@@ -15,6 +15,18 @@ export interface Link {
   url: string;
 }
 
+export interface Stat {
+  value: string;
+  label: string;
+}
+
+// Homepage highlight: the first paper with `feature` in an on_homepage section.
+export interface Feature {
+  kicker: string;
+  meta?: string;
+  stats?: Stat[];
+}
+
 export interface Paper {
   title: string;
   meta?: string;
@@ -24,6 +36,7 @@ export interface Paper {
   press?: Link[];
   abstract?: string;
   summary?: string;
+  feature?: Feature;
 }
 
 export interface Section {
@@ -46,5 +59,4 @@ export const SECTIONS: Section[] = manifest.map(entry => ({
   papers: parse(sectionFiles[`./sections/${entry.file}`]) as Paper[],
 }));
 
-export const HOMEPAGE_SECTIONS = SECTIONS.filter(s => s.onHomepage);
-export const TOTAL_PAPERS = SECTIONS.reduce((n, s) => n + s.papers.length, 0);
+export const HOMEPAGE_PAPERS = SECTIONS.filter(s => s.onHomepage).flatMap(s => s.papers);

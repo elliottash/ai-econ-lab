@@ -7,7 +7,7 @@
     "audit:content": "python3 scripts/audit_content.py",
     "test": "python3 -m unittest discover -s tests -v",
     "dev": "astro dev",
-    "build": "npm run audit:content && astro build && python3 scripts/postbuild.py",
+    "build": "npm run audit:content && astro build && python3 scripts/postbuild.py && python3 scripts/check_site.py",
     "preview": "astro preview"
   },
   "dependencies": {

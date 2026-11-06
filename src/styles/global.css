@@ -124,7 +124,15 @@
   filter: grayscale(1);
   transition: filter 0.15s ease;
 }
-.person-card .portrait-empty { display: block; }
+.person-card .portrait-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
 .person-card:hover .portrait { filter: grayscale(0); }
 .person-card .role {
   margin: 0;
