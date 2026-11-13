@@ -10,16 +10,12 @@ import { LAB } from '../data/lab';
 interface Props {
   title?: string;
   description?: string;
-  chatHref?: string;
-  chatLabel?: string;
   noindex?: boolean;
 }
 
 const {
   title = LAB.name,
   description = LAB.mission,
-  chatHref = "https://chat.ai-econ-lab.org/",
-  chatLabel = "Chat",
   noindex = false,
 } = Astro.props;
 
@@ -29,7 +25,7 @@ const footerLinks = [
   { href: '/people/', text: 'People' },
   { href: '/research/', text: 'Research' },
   { href: '/grants/', text: 'Grants' },
-  ...(chatHref ? [{ href: chatHref, text: chatLabel }] : []),
+  { href: 'https://chat.ai-econ-lab.org/', text: 'Internal Chat' },
   { href: `mailto:${LAB.email}`, text: LAB.email },
 ];
 ---
@@ -61,7 +57,6 @@ const footerLinks = [
         <a href="/people/">People</a>
         <a href="/research/">Research</a>
         <a href="/grants/">Grants</a>
-        {chatHref && <a class="chat-link" href={chatHref}>{chatLabel}</a>}
       </div>
     </nav>
   </header>

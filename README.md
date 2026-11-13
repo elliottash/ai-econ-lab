@@ -38,4 +38,4 @@ They compile into `/kb/`, which nginx protects with HTTP basic authentication.
 Deploy refuses to run without those local sources. Never publish them or `dist/`
 to GitHub, and never serve the production KB without the nginx authentication rules.
 Lab chat is at [chat.ai-econ-lab.org](https://chat.ai-econ-lab.org). The old
-`chat.zrh-ai-econ.com` hostname redirects there. The website’s Chat link opens it.
+`chat.zrh-ai-econ.com` hostname redirects there. The website footer's Internal Chat link opens it.
