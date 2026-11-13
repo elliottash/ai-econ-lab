@@ -1,13 +1,20 @@
-# Grants and funding. featured: true renders as the large lead item on /grants/.
+# Grants and funding. featured: true renders as the large lead item on /grants/,
+# with optional lead (name after role) and stats (value/label pairs).
 grants:
   - acronym: TAILSS
     title: Tools from AI for Law and Social Science
-    scheme: ERC Starting Grant, funded by SERI
+    scheme: ERC Starting Grant · funded by SERI
     amount: CHF 1.66 million
     period: since 2022
     role: Principal Investigator
+    lead: Elliott Ash
     host: ETH Zurich
     featured: true
+    stats:
+      - value: CHF 1.66m
+        label: direct funding from SERI — ERC Starting Grant 2021, panel SH2
+      - value: '2022'
+        label: grant start at ETH Zurich
     summary: >-
       The lab's founding grant. TAILSS develops artificial-intelligence tools
       for research on law and social science: new measurements of fairness and

@@ -22,12 +22,13 @@ python3 -m pip install -r requirements.txt
 npm run dev
 ```
 
-Validate with `npm test`, `npm run build`, and `python3 scripts/check_site.py`.
+Validate with `npm test` and `npm run build`. The build runs the content audit
+(papers and people), builds the site, writes the sitemap, and checks internal links.
 The content audit currently reports one existing missing-abstract warning.
 
 ## Deployment
 
-`./deploy.sh` tests and builds, checks local links, dry-runs the upload, then deploys
+`./deploy.sh` tests and builds, dry-runs the upload, asks for confirmation, then deploys
 to `deploy@138.201.189.28:/opt/ai-econ-lab/site/dist/` and verifies public routes.
 Nginx configuration is in `ops/ai-econ-lab.nginx.conf`; TLS and DNS use Cloudflare.
 
@@ -37,4 +38,4 @@ They compile into `/kb/`, which nginx protects with HTTP basic authentication.
 Deploy refuses to run without those local sources. Never publish them or `dist/`
 to GitHub, and never serve the production KB without the nginx authentication rules.
 Lab chat is at [chat.ai-econ-lab.org](https://chat.ai-econ-lab.org). The old
-`chat.zrh-ai-econ.com` hostname redirects there. The website’s Chat link opens it.
+`chat.zrh-ai-econ.com` hostname redirects there. The website footer's Internal Chat link opens it.

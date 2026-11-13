@@ -43,8 +43,7 @@ const sections = [
             <p class="eyebrow">{s.eyebrow}</p>
             <h2>{s.title}</h2>
           </div>
-          <p class="section-intro">{s.people.length}
-            {s.people.length === 1 ? 'person' : 'people'}</p>
+          <p class="section-intro">{`${s.people.length} ${s.people.length === 1 ? 'person' : 'people'}`}</p>
         </div>
         <div class="people-grid">
           {s.people.map(p => <PersonCard person={p} />)}

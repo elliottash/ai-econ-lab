@@ -2,7 +2,7 @@
 # Fields: title, meta, url, pdf, links, press, abstract, summary.
 - title: Gender and reactions to speeches in German parliamentary debates
   meta: (with Johann Kruemmel and Jonathan B. Slapin), American Journal of Political Science (2024)
-  url: http://doi.org/10.1111/ajps.12867
+  url: https://doi.org/10.1111/ajps.12867
   links:
   - text: Replication Files
     url: https://doi.org/10.7910/DVN/GODCXP
@@ -18,7 +18,7 @@
   summary: 'Analyzes 544,000 speeches in German state parliaments and finds reactions to them are gendered:
     men and women receive similar amounts of applause and jeering on average, but the pattern depends
     on the gender and topic of the speech.'
-- title: 'Relatio : Text semantics capture political and economic narratives'
+- title: 'Relatio: Text semantics capture political and economic narratives'
   meta: (with Germain Gauthier and Philine Widmer), Political Analysis (2023)
   url: https://arxiv.org/abs/2108.01720
   links:

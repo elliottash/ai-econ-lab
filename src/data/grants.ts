@@ -1,5 +1,6 @@
 import { parse } from 'yaml';
 import grantsRaw from './grants.yaml?raw';
+import type { Stat } from './papers';
 
 export interface GrantLink {
   text: string;
@@ -13,11 +14,13 @@ export interface Grant {
   amount?: string;
   period?: string;
   role?: string;
+  lead?: string;
   host?: string;
   partners?: string;
   featured?: boolean;
   summary?: string;
   links?: GrantLink[];
+  stats?: Stat[];
 }
 
 export interface GrantsData {

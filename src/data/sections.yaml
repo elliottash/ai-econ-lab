@@ -1,23 +1,24 @@
 # Manifest of research sections. Order here = order on the site (top = first).
 # Each entry points at a paper list in sections/<file>; order within a file is
-# the display order (top of file = first). "on_homepage" sections appear on /
-# in addition to /research.
+# the display order (top of file = first). Papers from "on_homepage" sections
+# feed the homepage Research block, in manifest order: the first paper with a
+# `feature` entry is the highlight, followed by the next five papers.
 sections:
   - file: recent-working-papers.yaml
     title: Recent Working Papers
     on_homepage: true
   - file: selected-economics.yaml
     title: Selected Publications — Economics
-    on_homepage: true
+    on_homepage: false
   - file: selected-ai-ml-nlp.yaml
     title: Selected Publications — AI/ML/NLP
-    on_homepage: true
+    on_homepage: false
   - file: selected-political-science.yaml
     title: Selected Publications — Political Science
-    on_homepage: true
+    on_homepage: false
   - file: selected-law.yaml
     title: Selected Publications — Law
-    on_homepage: true
+    on_homepage: false
   - file: more-working-papers.yaml
     title: More Working Papers
     on_homepage: false

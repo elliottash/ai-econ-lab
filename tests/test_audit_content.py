@@ -97,6 +97,44 @@ class AuditPaperChecks(AuditFixture):
         self.assertEqual(len(finding), 1)
         self.assertEqual(finding[0].severity, "warning")
 
+    def test_feature_without_kicker_is_an_error(self):
+        paper = dict(GOOD_PAPER, feature={"stats": [{"value": "1", "label": "one"}]})
+        self.assertIn("invalid-feature", self.codes(self.audit({"S": [paper]})))
+
+    def test_feature_stat_without_label_is_an_error(self):
+        paper = dict(GOOD_PAPER, feature={"kicker": "K", "stats": [{"value": "1"}]})
+        self.assertIn("invalid-feature", self.codes(self.audit({"S": [paper]})))
+
+
+GOOD_PERSON = {"slug": "ada-lovelace", "name": "Ada Lovelace", "role": "PhD Student", "group": "phd"}
+
+
+class AuditPeopleChecks(unittest.TestCase):
+    def audit(self, people, photos=()):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        public = Path(tmp.name)
+        for photo in photos:
+            (public / photo.lstrip("/")).parent.mkdir(parents=True, exist_ok=True)
+            (public / photo.lstrip("/")).write_bytes(b"")
+        return {f.code for f in audit_content.audit_people(people, public)}
+
+    def test_clean_person_produces_no_findings(self):
+        person = dict(GOOD_PERSON, photo="/assets/people/ada.jpg", github="https://github.com/ada")
+        self.assertEqual(self.audit([person], photos=[person["photo"]]), set())
+
+    def test_unknown_group_is_an_error(self):
+        self.assertIn("invalid-group", self.audit([dict(GOOD_PERSON, group="phd-student")]))
+
+    def test_missing_photo_file_is_an_error(self):
+        self.assertIn("missing-photo", self.audit([dict(GOOD_PERSON, photo="/assets/people/gone.jpg")]))
+
+    def test_duplicate_slug_is_an_error(self):
+        self.assertIn("duplicate-slug", self.audit([dict(GOOD_PERSON), dict(GOOD_PERSON, name="Other")]))
+
+    def test_profile_link_without_scheme_is_an_error(self):
+        self.assertIn("invalid-url", self.audit([dict(GOOD_PERSON, x="x.com/ada")]))
+
 
 class AuditManifestChecks(AuditFixture):
     def test_orphan_section_file_is_an_error(self):
