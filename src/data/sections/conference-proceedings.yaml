@@ -61,7 +61,7 @@
 - title: 'Heroes, Villains, and Victims, and GPT-3: Automated Extraction of Character Roles Without Training
     Data'
   meta: (with Dominik Stammbach and Maria Antoniak), Workshop on Narrative Understanding (2022)
-  url: http://arxiv.org/abs/2205.07557
+  url: https://arxiv.org/abs/2205.07557
   abstract: 'This paper shows how to use large-scale pre-trained language models to extract character
     roles from narrative texts without training data. Queried with a zero-shot question-answering prompt,
     GPT-3 can identify the hero, villain, and victim in diverse domains: newspaper articles, movie plot
@@ -69,7 +69,7 @@
   summary: Shows that GPT-3 can identify the hero, villain, and victim in news articles, movie plot summaries,
     and political speeches with no task-specific training data, using simple question-answering prompts.
 - title: 'DocSCAN: Unsupervised Text Classification via Learning from Neighbors'
-  meta: (with Dominik Stammbach), KONVENS ( 2022)
+  meta: (with Dominik Stammbach), KONVENS (2022)
   url: https://arxiv.org/abs/2105.04024
   links:
   - text: Code
@@ -129,7 +129,7 @@
     addressing a practice where evaluation has relied on small, unreproducible user studies.
 - title: Legal language modeling with transformers
   meta: (with Lazar Peric, Stefan Mijic, and Dominik Stammbach), ASAIL (2020)
-  pdf: http://ceur-ws.org/Vol-2764/paper2.pdf
+  pdf: https://ceur-ws.org/Vol-2764/paper2.pdf
   abstract: 'We explore the use of deep learning algorithms to generate text in a professional, technical
     domain: the judiciary. Building on previous work that has focused on non-legal texts, we train auto-regressive
     transformer models to read and write judicial opinions. We show that survey respondents with legal
@@ -170,7 +170,7 @@
     why the retrieved evidence supports the verdict, summarized in a few sentences.'
 - title: Entropy in Legal Language
   meta: (with Roland Friedrich and Mauro Luzzatto), NLLP (2020)
-  pdf: http://ceur-ws.org/Vol-2645/paper4.pdf
+  pdf: https://ceur-ws.org/Vol-2645/paper4.pdf
   links:
   - text: Code
     url: https://github.com/MauroLuzzatto/legal-entropy

@@ -65,7 +65,7 @@
     methods.
   summary: Represents federal appellate opinions as vectors and shows they encode court, era, and legal
     topic — but not the judges' political party or law school.
-- title: 'Judge, Jury, and EXEcute File: The brave new world of legal automation ,'
+- title: 'Judge, Jury, and EXEcute File: The brave new world of legal automation'
   meta: Social Market Foundation (2018)
   abstract: This paper discusses the prospects for automating decisions in the legal system. I will discuss
     active research on decision prediction models for judges and prosecutors and how these algorithms
